@@ -57,118 +57,126 @@
       </nav>
     </header>
 
-    <article>
-      <section>
-        <header>
-          <h1>What is a browser? And how does it work?</h1>
+    <main>
+      <article class="h-entry">
+        <section>
+          <header>
+            <h1 class="p-name">What is a browser? And how does it work?</h1>
+            <p>
+              By Michael Parkin |
+              <time class="dt-published" datetime="2021-03-26"
+                >March 26th 2021</time
+              >
+              | Theory
+            </p>
+          </header>
+
           <p>
-            By Michael Parkin |
-            <time datetime="2021-03-26">March 26th 2021</time> | Theory
+            First, in order to understand how a browser works we need to
+            understand what it is. When looking at the definition of a browser,
+            the Oxford English Dictionary defines it as “A computer program with
+            a graphical user interface for displaying and navigating between web
+            pages”. However, I do not agree with this definition for two
+            reasons: it is too simplistic; and a browser does not require a
+            graphical user. As such, I would rather define a web browser as a
+            piece of software that allows a user to access information and view
+            information that is store on the world wide web. This definition is
+            broader, allowing it to still encompasses both graphical browsers,
+            such as Google Chrome, while still including text-based browsers
+            such as Lynx. On top of that, this does not limit a browser to just
+            navigating between webpages, which is important as one can consider
+            mobile applications a form of browser as they receive information
+            from the world wide web and display it to the user, not displaying a
+            webpage.
           </p>
-        </header>
+          <p>
+            Next, we can look at how a browser functions. Although a browser may
+            seem like a basic piece of software, it has an important job and has
+            to do a lot of processing in the background. To understand this
+            processes, it is important to break it up into three sections:
+            navigation, response, and rendering.
+          </p>
+          <p>
+            First, the user navigates the browser and gives it a website domain
+            name to look up. With this, the browser does a Domain Name System
+            (DNS) Lookup in order to find the IP address of the provided domain
+            name. Once found, the browser establishes a connection with the data
+            server through a Transmission Control Protocol (TCP) handshake. If
+            the website is more secure, the browser will also have to perform an
+            extra step of security and establish a Transport Layer Security
+            (TLS) handshake using multiple encryption keys too.
+          </p>
+          <p>
+            Once this connection has been established, the process then moves to
+            the response phase. The browser now sends the IP address it found to
+            the server, which allows the server to look for the correct site.
+            Once found, instead of sending back the entire website to the
+            browser, the server sends the HTML file as this is much quicker and
+            more efficient.
+          </p>
+          <p>
+            Thereafter, the browser moves into the most crucial part of the
+            process – rendering. With the HTML file received, the browser now
+            parses the file and creates a Document Object Model (DOM) tree – a
+            parsed version of the HTML file that contains a hierarchical list of
+            meta data, and data to be displayed to the end user along with. With
+            this done, the browser then focuses on the layout of the website.
+            With all the content of the website parsed, the browser has to
+            decided where this content should go and how it should be lay out on
+            the page using either CSS and/or JavaScript. Lastly, the browser
+            focuses on painting the webpage. Here, again using either CSS and/or
+            JavaScript, the browser attempts to add all the visuals of the
+            website, including elements such as colours, borders, and shadows.
+          </p>
+          <p>
+            So, although the browser may seem simple, it is preforming a complex
+            and important job in an extremely short amount of time. On top of
+            all of this, once the browser has completed this entire process it
+            then stores a copy of this website in its cache so that the next
+            time the user accesses it, the browser can load it quicker and more
+            easily.
+          </p>
 
-        <p>
-          First, in order to understand how a browser works we need to
-          understand what it is. When looking at the definition of a browser,
-          the Oxford English Dictionary defines it as “A computer program with a
-          graphical user interface for displaying and navigating between web
-          pages”. However, I do not agree with this definition for two reasons:
-          it is too simplistic; and a browser does not require a graphical user.
-          As such, I would rather define a web browser as a piece of software
-          that allows a user to access information and view information that is
-          store on the world wide web. This definition is broader, allowing it
-          to still encompasses both graphical browsers, such as Google Chrome,
-          while still including text-based browsers such as Lynx. On top of
-          that, this does not limit a browser to just navigating between
-          webpages, which is important as one can consider mobile applications a
-          form of browser as they receive information from the world wide web
-          and display it to the user, not displaying a webpage.
-        </p>
-        <p>
-          Next, we can look at how a browser functions. Although a browser may
-          seem like a basic piece of software, it has an important job and has
-          to do a lot of processing in the background. To understand this
-          processes, it is important to break it up into three sections:
-          navigation, response, and rendering.
-        </p>
-        <p>
-          First, the user navigates the browser and gives it a website domain
-          name to look up. With this, the browser does a Domain Name System
-          (DNS) Lookup in order to find the IP address of the provided domain
-          name. Once found, the browser establishes a connection with the data
-          server through a Transmission Control Protocol (TCP) handshake. If the
-          website is more secure, the browser will also have to perform an extra
-          step of security and establish a Transport Layer Security (TLS)
-          handshake using multiple encryption keys too.
-        </p>
-        <p>
-          Once this connection has been established, the process then moves to
-          the response phase. The browser now sends the IP address it found to
-          the server, which allows the server to look for the correct site. Once
-          found, instead of sending back the entire website to the browser, the
-          server sends the HTML file as this is much quicker and more efficient.
-        </p>
-        <p>
-          Thereafter, the browser moves into the most crucial part of the
-          process – rendering. With the HTML file received, the browser now
-          parses the file and creates a Document Object Model (DOM) tree – a
-          parsed version of the HTML file that contains a hierarchical list of
-          meta data, and data to be displayed to the end user along with. With
-          this done, the browser then focuses on the layout of the website. With
-          all the content of the website parsed, the browser has to decided
-          where this content should go and how it should be lay out on the page
-          using either CSS and/or JavaScript. Lastly, the browser focuses on
-          painting the webpage. Here, again using either CSS and/or JavaScript,
-          the browser attempts to add all the visuals of the website, including
-          elements such as colours, borders, and shadows.
-        </p>
-        <p>
-          So, although the browser may seem simple, it is preforming a complex
-          and important job in an extremely short amount of time. On top of all
-          of this, once the browser has completed this entire process it then
-          stores a copy of this website in its cache so that the next time the
-          user accesses it, the browser can load it quicker and more easily.
-        </p>
+          <footer>
+            <h2>References:</h2>
 
-        <footer>
-          <h2>References:</h2>
+            <ol>
+              <li>
+                All About Cookies. (n.d.).
+                <cite>What is my browser? What does a Web Browser Do?</cite>
+                <a
+                  href="https://www.allaboutcookies.org/browsers/"
+                  target="_blank"
+                  >https://www.allaboutcookies.org/browsers/</a
+                >
+              </li>
+              <li>
+                MDN Web Docs. (2021, February 24).
+                <cite
+                  >Populating the page: how browsers work - Web Performance |
+                  MDN.</cite
+                >
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work"
+                  target="_blank"
+                  >https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work</a
+                >
+              </li>
 
-          <ol>
-            <li>
-              All About Cookies. (n.d.).
-              <cite>What is my browser? What does a Web Browser Do?</cite>
-              <a
-                href="https://www.allaboutcookies.org/browsers/"
-                target="_blank"
-                >https://www.allaboutcookies.org/browsers/</a
-              >
-            </li>
-            <li>
-              MDN Web Docs. (2021, February 24).
-              <cite
-                >Populating the page: how browsers work - Web Performance |
-                MDN.</cite
-              >
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work"
-                target="_blank"
-                >https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work</a
-              >
-            </li>
-
-            <li>
-              MDN Web Docs. (2021, March 28).
-              <cite>How the Web works - Learn web development | MDN.</cite>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works"
-                target="_blank"
-                >https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works</a
-              >
-            </li>
-          </ol>
-        </footer>
-      </section>
-    </article>
+              <li>
+                MDN Web Docs. (2021, March 28).
+                <cite>How the Web works - Learn web development | MDN.</cite>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works"
+                  target="_blank"
+                  >https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works</a
+                >
+              </li>
+            </ol>
+          </footer>
+        </section>
+      </article>
+    </main>
 
     <a href="../TheoryBlogs/Blog6.html">Previous Blog</a>
     <a href="../CreativeBlogs/Blog8.html">Next Blog</a>
