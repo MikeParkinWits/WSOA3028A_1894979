@@ -1,18 +1,22 @@
 const menuOptions = [
-    {title: 'Portfolio', link: '/WSOA3028A_1894979/PortfolioPage/PortfolioMainPage.html'},
-    {title: 'Blog', link: '/WSOA3028A_1894979/Blogs/AllBlogsP1.html'},
+    {title: 'Contact Me', link: '/WSOA3028A_1894979/ContactPage/ContactMePage.html'},
     {title: 'About Me', link: '/WSOA3028A_1894979/AboutPage/AboutMePage.html'},
-    {title: 'Contact Me', link: '/WSOA3028A_1894979/ContactPage/ContactMePage.html'}
+    {title: 'Blog', link: '/WSOA3028A_1894979/Blogs/AllBlogsP1.html'},
+    {title: 'Portfolio', link: '/WSOA3028A_1894979/PortfolioPage/PortfolioMainPage.html'}
+
+
+
 
 ]
 
 const initialiseMenuLogo = (ul) => {
     const li = document.createElement('li');
+    li.className = "logo"
     const link = document.createElement('a');
     link.href = '/WSOA3028A_1894979/index.html';
     const image = document.createElement('img');
-    image.src = '/WSOA3028A_1894979/Images/Logo.png';
-    image.width = 200;
+    image.src = '/Images/Logo.png';
+    image.width = 150;
     image.alt = 'Jake Sky Logo';
     link.appendChild(image);
 
@@ -22,7 +26,7 @@ const initialiseMenuLogo = (ul) => {
 }
 
 const initialiseMenu = () =>{
-    const nav = document.querySelector('.header-nav');
+    const nav = document.querySelector('.navbar');
 
     const ul = document.createElement('ul');
 
@@ -30,6 +34,7 @@ const initialiseMenu = () =>{
 
     for (let option of menuOptions){
         const li = document.createElement('li');
+        li.className = "navItems"
         const link = document.createElement('a');
         link.innerText = option.title;
         link.href = option.link;
