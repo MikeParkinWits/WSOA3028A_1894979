@@ -19,7 +19,7 @@ const initialiseMenuLogo = (ul) => {
     link.href = '/WSOA3028A_1894979/index.html';
     const image = document.createElement('img');
     image.src = '/WSOA3028A_1894979/Images/Logo.png';
-    image.width = 150;
+    image.width = 125;
     image.alt = 'Jake Sky Logo';
     link.appendChild(image);
 

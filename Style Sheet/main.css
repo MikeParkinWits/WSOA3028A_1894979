@@ -28,6 +28,10 @@ li {
   display: inline;
 }
 
+h1 {
+  font-size: 80px;
+}
+
 nav ul {
   list-style: none;
   display: inline-block;
@@ -55,7 +59,7 @@ nav ul {
 .navItems a {
   padding-left: 2em;
   padding-right: 2em;
-  line-height: 5.5em;
+  line-height: 4.5em;
   border-left: #d3d3d3 solid 1px;
 }
 
@@ -66,7 +70,7 @@ nav ul {
   left: 0%;
   width: 100%;
   height: 110%;
-  outline: 1px solid pink;
+  /* outline: 1px solid pink; */
 }
 
 nav li a {
@@ -79,34 +83,114 @@ nav li a:hover {
   color: rgb(126, 126, 126);
 }
 
+/* FOOTER */
+
 .footer {
-  background-color: #d4d4d4;
+  background-color: #e6e6e6;
   padding-bottom: 0;
   width: 100%;
   padding: 2px 0 2px 0;
 
   box-shadow: 1px 1px 10px rgba(119, 119, 119, 0.2);
 
-  color: rgb(75, 75, 75);
+  color: #4c4c4e;
 }
 
+/*
 .referenceItem a {
   padding-left: 2em;
   padding-right: 2em;
   border-left: #979797 solid 1px;
   border-right: #979797 solid 1px;
 }
+*/
 
 .referenceItem a {
-  color: rgb(75, 75, 75);
-
-  transition: color 0.2s;
+  color: #4c4c4e;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
 
 .referenceItem a:hover {
-  color: rgb(34, 34, 34);
+  border-bottom-color: #4c4c4e;
 }
 
 .footer li a {
   padding: 25px;
+}
+
+/* HOMEPAGE BANNER */
+
+.bannerContainer {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 40em;
+  text-align: left;
+}
+
+.bannerImage {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-color: #d3d3d3;
+  mix-blend-mode: multiply;
+}
+
+.bannerText {
+  font-size: 20px;
+  text-align: center;
+
+  margin-top: 4em;
+
+  color: white;
+}
+
+.bannerText p {
+  font-size: 25px;
+  text-align: center;
+
+  margin-top: 100px;
+  line-height: 22em;
+
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .bannerText {
+    margin-top: 2em;
+  }
+  .bannerText h1 {
+    font-size: 3.5em;
+  }
+  .bannerText p {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bannerText {
+  }
+  .bannerText h1 {
+    font-size: 3em;
+  }
+  .bannerText p {
+    line-height: 29em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bannerText {
+  }
+  .bannerText h1 {
+    font-size: 3em;
+  }
+  .bannerText p {
+    line-height: 29em;
+    font-size: 1em;
+  }
 }
