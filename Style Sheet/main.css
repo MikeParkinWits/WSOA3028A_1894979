@@ -181,16 +181,6 @@ nav li a:hover {
   color: rgb(83, 83, 83);
 }
 
-.backToTopLink .show {
-  visibility: visible;
-  opacity: 1;
-}
-
-.backToTopLink .hide {
-  visibility: hidden;
-  opacity: 0;
-}
-
 .backToTopLink:hover {
   color: rgb(150, 150, 150);
 }
