@@ -2,7 +2,6 @@ body {
   margin: auto;
   width: auto;
   text-align: center;
-  margin-top: 5em;
 
   background-color: #f7f7f7;
 
@@ -12,8 +11,21 @@ body {
 .header-nav {
   top: 0em;
   text-align: left;
-  position: fixed;
+  position: sticky;
   width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  display: inline;
 }
 
 nav ul {
@@ -32,18 +44,32 @@ nav ul {
 .logo {
   float: left;
   padding: 0.4em;
+  padding-left: 1em;
 }
 
 .navItems {
   float: right;
-  padding-right: 2em;
-  line-height: 5.5em;
+  position: relative;
 }
 
-nav li a,
-nav li {
-  text-decoration: none;
-  display: inline;
+.navItems a {
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: 5.5em;
+  border-left: #d3d3d3 solid 1px;
+}
+
+.navItems a:after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0%;
+  width: 100%;
+  height: 110%;
+  outline: 1px solid pink;
+}
+
+nav li a {
   color: black;
 
   transition: color 0.2s;
@@ -51,4 +77,36 @@ nav li {
 
 nav li a:hover {
   color: rgb(126, 126, 126);
+}
+
+.footer {
+  background-color: #d4d4d4;
+  padding-bottom: 0;
+  width: 100%;
+  padding: 2px 0 2px 0;
+
+  box-shadow: 1px 1px 10px rgba(119, 119, 119, 0.2);
+
+  color: rgb(75, 75, 75);
+}
+
+.referenceItem a {
+  padding-left: 2em;
+  padding-right: 2em;
+  border-left: #979797 solid 1px;
+  border-right: #979797 solid 1px;
+}
+
+.referenceItem a {
+  color: rgb(75, 75, 75);
+
+  transition: color 0.2s;
+}
+
+.referenceItem a:hover {
+  color: rgb(34, 34, 34);
+}
+
+.footer li a {
+  padding: 25px;
 }

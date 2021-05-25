@@ -11,6 +11,7 @@
       href="../../Images/LogoSmall.png"
     />
 
+    <!-- Google Structured Data has to be inline as it is using JSON-LD, and contains data blocks, as per w3 https://www.w3.org/TR/2016/REC-html51-20161101/semantics-scripting.html#the-script-element -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,11 +53,12 @@
       and some exciting projects on the horizon"
     />
     <script type="module" src="../../Scripts/navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../Style Sheet/main.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="header-nav"></nav>
+    <header class="header-nav">
+      <nav class="navbar"></nav>
     </header>
 
     <main>

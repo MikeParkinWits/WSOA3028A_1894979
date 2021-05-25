@@ -64,7 +64,7 @@ const initialiseFooter = () =>{
     
     for (let socialMedia of socialMediaLinks){
         const liSocialMedia = document.createElement('li');
-
+        liSocialMedia.className = "socialMediaItem";
         const linkSocialMedia = document.createElement('a');
         const image = document.createElement('img');
         image.src = socialMedia.image;
@@ -87,6 +87,8 @@ const initialiseFooter = () =>{
 
     const ulRef = document.createElement('ul');
     const liRef = document.createElement('il');
+    liRef.className = "referenceItem";
+
     const linkRef = document.createElement('a');
     linkRef.innerText = 'References'
     linkRef.href = '/WSOA3028A_1894979/ReferencePage/References.html';
