@@ -13,6 +13,7 @@ body {
   text-align: left;
   position: sticky;
   width: 100%;
+  z-index: 1;
 }
 
 ul {
@@ -159,6 +160,42 @@ nav li a:hover {
 
   color: white;
 }
+
+/* BACK TO TOP LINK */
+
+.backToTopLink {
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.7em 0.7em 0;
+  border-radius: 50%;
+  padding: 0.25em;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  color: rgb(83, 83, 83);
+}
+
+.backToTopLink .show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.backToTopLink .hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.backToTopLink:hover {
+  color: rgb(150, 150, 150);
+}
+
+/* RESPONSIVE DESIGN */
 
 @media only screen and (max-width: 1024px) {
   .bannerText {

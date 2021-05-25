@@ -99,6 +99,42 @@ const initialiseFooter = () =>{
     footer.appendChild(ulRef);
 };
 
+const scrollToTopButton = document.querySelector('.backToTopLink');
+
+window.onscroll = function() {
+    scrollFunction()
+};
 
 
-document.addEventListener('DOMContentLoaded', () => initialiseMenu(), initialiseFooter());
+const scrollFunction = () => {
+
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scrollToTopButton.style.display = "block";
+      } else {
+        scrollToTopButton.style.display = "none";
+      }
+};
+
+
+window.addEventListener("scroll", scrollFunction);
+
+const scrollToTop = () =>{
+
+    const distanceFromTop = document.documentElement.scrollTop ||
+    document.body.scrollTop;
+
+    if (distanceFromTop > 0){
+        window.requestAnimationFrame(scrollToTop);
+
+        window.scrollTo(0, distanceFromTop - distanceFromTop/10);
+    }
+
+};
+
+scrollToTopButton.onclick = function(scroll){
+    scroll.preventDefault();
+    scrollToTop();
+}
+
+
+document.addEventListener('DOMContentLoaded', () => initialiseMenu(), initialiseFooter(), scrollFunction());
