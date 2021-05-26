@@ -422,6 +422,46 @@ nav li a:hover {
   grid-auto-rows: minmax(70vh, autofit);
 }
 
+/* PHOTO GALLERY */
+
+.photos {
+  line-height: 0;
+
+  column-count: 4;
+  column-gap: 10px;
+
+  margin: 2em;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+
+  border-radius: 1.5%;
+}
+
+@media (max-width: 1200px) {
+  .photos {
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  .photos {
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  .photos {
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  .photos {
+    column-count: 1;
+  }
+}
+
 /* RESPONSIVE DESIGN */
 
 @media only screen and (max-width: 1024px) {
