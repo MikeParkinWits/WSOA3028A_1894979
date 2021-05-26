@@ -35,6 +35,13 @@ h1 {
   font-size: 80px;
 }
 
+/*
+.halfToneBackground {
+  background-color: #f0f0f0;
+}
+
+*/
+
 /* NAVIGATION BAR */
 
 nav ul {
@@ -90,7 +97,7 @@ nav li a:hover {
 /* FOOTER */
 
 .footer {
-  background-color: #e6e6e6;
+  background-color: #dddddd;
   padding-bottom: 0;
   width: 100%;
   padding: 2px 0 2px 0;
@@ -271,6 +278,81 @@ nav li a:hover {
 
 .websiteBlog {
   color: rgb(201, 64, 201);
+}
+
+/* Portfolio Card */
+
+.portfolioCard {
+  display: inline-block;
+  margin: 1em 1em;
+  width: 43em;
+  background-color: rgb(253, 253, 253);
+  text-decoration: none;
+  height: 100%;
+  height: 18em;
+  text-align: left;
+
+  border-radius: 2%;
+
+  box-shadow: 1px 1px 10px 1px rgb(165, 165, 165);
+
+  transition: 0.25s;
+
+  /*
+  box-shadow: 1px 1px 1px black;
+  */
+
+  overflow: hidden;
+
+  border: solid 1px rgb(204, 204, 204);
+
+  position: relative;
+}
+
+.portfolioCard img {
+  height: 300px;
+  width: 27em;
+  max-width: 100%;
+  object-fit: cover;
+  border-left: solid 2px rgb(70, 70, 70);
+  object-position: 80% 50%;
+
+  float: right;
+}
+
+.portfolioCard:hover {
+  box-shadow: 4px 4px 20px 4px rgb(165, 165, 165);
+}
+
+.portfolioCard h3,
+.portfolioCard h2 {
+  font-size: 30px;
+
+  margin: 0.6em 0.1em 0.8em 1em;
+}
+
+.portfolioCard header {
+  margin: 0em;
+  width: 37%;
+}
+
+.portfolioCard p {
+  margin: 1em 0.1em 10em 1.9em;
+  text-align: left;
+}
+
+.portfolioCard footer {
+  margin-top: 0.5em;
+
+  width: 100%;
+
+  border-top: solid 1px rgb(194, 194, 194);
+
+  background-color: #eeeeee;
+  padding: 0px;
+
+  position: absolute;
+  bottom: 0;
 }
 
 /* RESPONSIVE DESIGN */
