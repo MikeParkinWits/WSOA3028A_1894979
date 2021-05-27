@@ -10,6 +10,11 @@ body {
   font-family: helvetica, arial, sans-serif;
 
   box-sizing: border-box;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .header-nav {
@@ -120,6 +125,8 @@ nav li a:hover {
   box-shadow: 1px 1px 10px rgba(119, 119, 119, 0.2);
 
   color: #4c4c4e;
+  position: relative;
+  margin-top: auto;
 }
 
 /*
@@ -480,7 +487,7 @@ nav li a:hover {
   }
 }
 
-/* BLOGS - RIX!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* BLOGS - FIX!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .blogContent {
   text-align: center;
@@ -555,6 +562,229 @@ nav li a:hover {
   display: block;
   text-align: center;
   padding-bottom: 0em;
+}
+
+/* SOCIAL MEDIA CARD */
+
+.socialMediaCard {
+  display: inline-block;
+  margin: 1em 1em;
+  max-width: 25em;
+  min-width: 25em;
+  width: auto;
+  text-decoration: none;
+  text-align: left;
+
+  transition: 0.25s;
+
+  /*
+  box-shadow: 1px 1px 1px black;
+  */
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.socialMediaCard img {
+  max-width: 100%;
+  object-position: 80% 50%;
+
+  float: left;
+}
+
+.socialMediaCard h3,
+.socialMediaCard h2 {
+  font-size: 30px;
+  margin: 0.4em 0.1em 0em 0em;
+  line-height: 1.2em;
+  margin-left: 30%;
+
+  padding-left: 0.5em;
+
+  text-align: left;
+}
+
+.socialMediaCard p {
+  margin: 0.7em 0.1em 0em 0em;
+  line-height: 1.2em;
+  margin-left: 30%;
+
+  padding-left: 1em;
+
+  text-align: left;
+}
+
+/* SOCIAL MEDIA GRID */
+
+.socialMediaGrid {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2% 0%;
+  grid-auto-rows: minmax(70vh, autofit);
+  text-align: right;
+}
+
+.emailMediaCard {
+  text-align: left;
+  margin-left: 7rem;
+}
+
+.emailMediaCard h3 {
+  font-size: 30px;
+  margin-bottom: 0.3em;
+}
+
+.emailMediaCard a {
+  margin-left: -0.1em;
+}
+
+/* ABOUT ME */
+
+.aboutMe {
+  text-align: left;
+}
+
+.aboutProfilePicture {
+  margin-left: 4em;
+}
+
+.aboutMe img {
+  text-align: left;
+}
+
+.aboutMe ul {
+  margin-left: 5.5em;
+}
+
+.aboutMe li {
+  padding-left: 2em;
+}
+
+.aboutMe p {
+  float: right;
+  text-align: left;
+  max-width: 55%;
+  padding-right: 10em;
+}
+
+.aboutMe {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* PAST CLIENTS CARD */
+
+.pastClientCard {
+  display: inline-block;
+  margin: 1em 1em;
+
+  margin-left: 5em;
+  margin-bottom: 1em;
+
+  padding-bottom: 1em;
+
+  border-bottom: 1px solid rgb(184, 184, 184);
+
+  width: 100%;
+  width: 1000;
+
+  width: auto;
+  text-decoration: none;
+  text-align: left;
+
+  transition: 0.25s;
+
+  /*
+  box-shadow: 1px 1px 1px black;
+  */
+
+  overflow: hidden;
+
+  position: relative;
+
+  margin-right: 14%;
+}
+
+.pastClient {
+  margin-bottom: -2em;
+}
+
+.pastClientCard img {
+  margin-top: 1em;
+  max-width: 100%;
+  object-position: 80% 80%;
+
+  float: left;
+
+  padding-right: 0em;
+  padding-bottom: 1em;
+}
+
+.pastClientCard h3,
+.pastClientCard h2 {
+  font-size: 30px;
+  margin: 0.4em 0em 0em 0em;
+  line-height: 1.2em;
+  margin-left: 23%;
+
+  padding-left: 0.5em;
+
+  text-align: left;
+}
+
+.pastClientCard p {
+  line-height: 1.2em;
+  margin-left: 23%;
+
+  padding-left: 1em;
+
+  text-align: left;
+}
+
+/* PAST CLIENT GRID */
+
+.pastClientGrid {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2% 0%;
+  grid-auto-rows: minmax(70vh, autofit);
+  text-align: right;
+}
+
+.emailMediaCard {
+  text-align: left;
+  margin-left: 7rem;
+}
+
+.emailMediaCard h3 {
+  font-size: 30px;
+  margin-bottom: 0.3em;
+}
+
+.emailMediaCard a {
+  margin-left: -0.1em;
+}
+
+/* REFERENCE LIST */
+
+.referenceListText p {
+  margin-left: 7rem;
+  text-align: left;
+}
+
+.referenceListText a {
+  text-decoration: underline;
+  color: blue;
 }
 
 /* RESPONSIVE DESIGN */
