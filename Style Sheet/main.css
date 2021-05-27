@@ -35,14 +35,27 @@ li {
 
 h1 {
   font-size: 80px;
+
+  margin: 0.4em;
 }
 
-/*
+h2 {
+  font-size: 50px;
+  line-height: 0.5em;
+  text-align: left;
+  margin-left: 1.3em;
+}
+
 .halfToneBackground {
   background-color: #f0f0f0;
+
+  padding-top: 0.8em;
+  padding-bottom: 2em;
 }
 
-*/
+article {
+  padding-bottom: 2em;
+}
 
 /* NAVIGATION BAR */
 
@@ -161,6 +174,10 @@ nav li a:hover {
   margin-top: 4em;
 
   color: white;
+}
+
+.bannerText h1 {
+  margin: 1.3em;
 }
 
 .bannerText p {
@@ -334,7 +351,8 @@ nav li a:hover {
 .portfolioCard h2 {
   font-size: 30px;
   max-width: 100%;
-  margin: 0.6em 0.1em 0.8em 1em;
+  margin: 0.6em 0.1em 0.5em 0.5em;
+  line-height: 1.2em;
 }
 
 .portfolioCard header {
@@ -343,7 +361,7 @@ nav li a:hover {
 }
 
 .portfolioCard p {
-  margin: 1em 0.1em 10em 1.9em;
+  margin: 1em 5em 10em 1em;
   text-align: left;
 }
 
@@ -460,6 +478,83 @@ nav li a:hover {
   .photos {
     column-count: 1;
   }
+}
+
+/* BLOGS - RIX!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.blogContent {
+  text-align: center;
+  padding-bottom: 0em;
+}
+
+.blogText {
+  display: inline-block;
+  text-align: left;
+  max-width: 60em;
+
+  line-height: 1.5em;
+
+  margin-bottom: 2em;
+
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.blogInfo {
+  padding-bottom: 1em;
+  font-size: 20px;
+}
+
+.blogName {
+  margin-bottom: 0.1em;
+  margin-left: 0em;
+}
+
+.blogHeader {
+  display: inline-block;
+  margin-bottom: 0.1em;
+  text-align: left;
+  max-width: 60em;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.blogContent h2 {
+  text-align: left;
+  margin-left: 7rem;
+}
+
+.blogReferences {
+  display: inline-block;
+  text-align: left;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  line-height: 1.5em;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.blogReferences li {
+  display: list-item;
+  list-style: circle;
+  margin: 0 auto;
+
+  max-width: 60em;
+}
+
+.blogReferences a {
+  text-decoration: underline;
+  color: blue;
+}
+
+.blogReferenceText {
+  text-align: left;
+}
+
+.referenceFooter {
+  display: block;
+  text-align: center;
+  padding-bottom: 0em;
 }
 
 /* RESPONSIVE DESIGN */
