@@ -1,6 +1,6 @@
 const menuOptions = [
     {title: 'Contact Me', link: '/WSOA3028A_1894979/ContactPage/ContactMePage.html'},
-    {title: 'About Me', link: '/WSOA3028A_1894979/AboutPage/AboutMePage.html'},
+    {title: 'About Me', link: '/WSOA3028A_1894979/AboutPage/aboutMePage.html'},
     {title: 'Blog', link: '/WSOA3028A_1894979/Blogs/AllBlogsP1.html'},
     {title: 'Portfolio', link: '/WSOA3028A_1894979/PortfolioPage/PortfolioMainPage.html'}
 ]
@@ -9,7 +9,7 @@ const socialMediaLinks = [
     {title: 'Instagram Logo', link: 'https://www.instagram.com/jakeskyphotography/', image: '/WSOA3028A_1894979/Images/SocialMedia/instagram.png'},
     {title: 'Facebook Logo', link: 'https://www.facebook.com/JakeSkyPhotography/', image: '/WSOA3028A_1894979/Images/SocialMedia/facebook.png'},
     {title: 'Twitter Logo', link: 'https://twitter.com/JakeSkyPhotos', image: '/WSOA3028A_1894979/Images/SocialMedia/twitter.png'},
-    {title: 'Email Logo', link: 'mailto:JakeSkyPhotography@gmail.com', image: '/WSOA3028A_1894979/Images/SocialMedia/email.png'}
+    {title: 'Email Logo', link: 'mailto:JakeSkyPhotography@gmail.com', image: '/WSOA3028A_1894979/Images/SocialMedia/email_square.png'}
 ]
 
 const initialiseMenuLogo = (ul) => {
@@ -37,7 +37,7 @@ const initialiseMenu = () =>{
 
     for (let option of menuOptions){
         const li = document.createElement('li');
-        li.className = "navItems";
+        li.className = "nav-items";
         const link = document.createElement('a');
         link.innerText = option.title;
         link.href = option.link;
@@ -51,7 +51,7 @@ const initialiseMenu = () =>{
 };
 
 const initialiseFooter = () =>{
-    const footer = document.querySelector('.footer');
+    const footer = document.querySelector('.main-footer');
 
     const p = document.createElement('p');
     p.className = "p-name";
@@ -64,7 +64,7 @@ const initialiseFooter = () =>{
     
     for (let socialMedia of socialMediaLinks){
         const liSocialMedia = document.createElement('li');
-        liSocialMedia.className = "socialMediaItem";
+        liSocialMedia.className = "footer-social-media-item";
         const linkSocialMedia = document.createElement('a');
         const image = document.createElement('img');
         image.src = socialMedia.image;
@@ -87,7 +87,6 @@ const initialiseFooter = () =>{
 
     const ulRef = document.createElement('ul');
     const liRef = document.createElement('il');
-    liRef.className = "referenceItem";
 
     const linkRef = document.createElement('a');
     linkRef.innerText = 'References'
@@ -99,7 +98,7 @@ const initialiseFooter = () =>{
     footer.appendChild(ulRef);
 };
 
-const scrollToTopButton = document.querySelector('.backToTopLink');
+const scrollToTopButton = document.querySelector('.back-to-top-link');
 
 window.onscroll = function() {
     scrollFunction()
