@@ -1,9 +1,39 @@
 const blogItems = [
+    {title: "The Digital Divide in South Africa", blogLocation: "/Blogs/TheoryBlogs/Blog17.html",
+        blogImagePreview: {
+            src: "/Images/TheoryBlogs/Blog17/Blog17-Preview-Image.jpg",
+            alt: "A picture of a tree at sunrise",
+            imageTitle: "A picture of a tree at sunrise in Africa"},
+        blogType: "Theory",
+        blogDescription: "The digital divide is a huge problem, and here i explain why it's a bigger problem for South Africa",
+        blogAuthor: "Michael Parkin",
+        blogDate: "21 May 2021"
+    },
+    {title: "What Next?", blogLocation: "/Blogs/CreativeBlogs/Blog16.html",
+        blogImagePreview: {
+            src: "/Images/CreativeImages/Blog16/Blog16-Preview-Image.jpg",
+            alt: "A picture of a tree at sunrise",
+            imageTitle: "A picture of a tree at sunrise in Africa"},
+        blogType: "Creative",
+        blogDescription: "Here I explain the next chapter in my crazy story!",
+        blogAuthor: "Jake Sky",
+        blogDate: "14 May 2021"
+    },
+    {title: "Exploring Metaphors and Meaning Making in Digital Spaces", blogLocation: "/Blogs/TheoryBlogs/Blog15.html",
+        blogImagePreview: {
+            src: "/Images/TheoryBlogs/Blog15/Blog15-Preview-Image.jpg",
+            alt: "A picture of someone holding a phone",
+            imageTitle: "A picture of someone holding a phone in their hand"},
+        blogType: "Theory",
+        blogDescription: "Here I explore metaphor design, and its use, in digital spaces",
+        blogAuthor: "Michael Parkin",
+        blogDate: "7 May 2021"
+    },
     {title: "Information Geographies - A Critical Reflection", blogLocation: "/Blogs/TheoryBlogs/Blog14.html",
         blogImagePreview: {
             src: "/Images/TheoryBlogs/Blog14/Blog14-Preview-Image.jpg",
-            alt: "A person drawing wireframes on a piece of paper",
-            imageTitle: "A person drawing wireframes for their app"},
+            alt: "A globe on a table",
+            imageTitle: "A picture of a globe on a table"},
         blogType: "Theory",
         blogDescription: "Here I give a critical reflection on the reading Towards a Study of Information Geographies",
         blogAuthor: "Michael Parkin",
