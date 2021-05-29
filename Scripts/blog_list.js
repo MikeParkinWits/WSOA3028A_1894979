@@ -149,23 +149,23 @@ const initialiseBlogs = () =>{
     {
         blogsToLoad = blogItems.length;
 
-        if (window.location.pathname === "/Blogs/AllBlogsP1.html")
+        if (window.location.pathname === "/WSOA3028A_1894979/Blogs/AllBlogsP1.html")
         {
             allBlogs = true;
         }
-        else if (window.location.pathname === "/Blogs/TheoryBlogsP1.html")
+        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/TheoryBlogsP1.html")
         {
             blogType = "Theory";
         }
-        else if (window.location.pathname === "/Blogs/CreativeBlogsP1.html")
+        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/CreativeBlogsP1.html")
         {
             blogType = "Creative";
         }
-        else if (window.location.pathname === "/Blogs/CharacterDevBlogsP1.html")
+        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/CharacterDevBlogsP1.html")
         {
             blogType = "Character Development";
         }
-        else if (window.location.pathname === "/Blogs/WebDevBlogsP1.html")
+        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/WebDevBlogsP1.html")
         {
             blogType = "Website Development";
         }
@@ -183,10 +183,10 @@ const initialiseBlogs = () =>{
             const section = document.createElement("section");
             const link = document.createElement("a");
             link.className = "blog-card";
-            link.href = "WSOA3028A_1894979" + blogItems[i].blogLocation;
+            link.href = "/WSOA3028A_1894979" + blogItems[i].blogLocation;
         
             const img = document.createElement("img");
-            img.src = "WSOA3028A_1894979" + blogItems[i].blogImagePreview.src;
+            img.src = "/WSOA3028A_1894979" + blogItems[i].blogImagePreview.src;
             img.alt = blogItems[i].blogImagePreview.alt;
             img.width = "400";
             img.height = "400";
