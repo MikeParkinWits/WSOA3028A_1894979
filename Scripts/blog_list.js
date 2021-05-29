@@ -142,7 +142,7 @@ const initialiseBlogs = () =>{
 
     console.log(window.location.pathname);
 
-    if (window.location.pathname === "/WSOA3028A_1894979/")
+    if (window.location.pathname === "/WSOA3028A_1894979/" || window.location.pathname === "/WSOA3028A_1894979/index.html" || window.location.pathname === "/")
     {
         blogsToLoad = 3;
         allBlogs = true;
