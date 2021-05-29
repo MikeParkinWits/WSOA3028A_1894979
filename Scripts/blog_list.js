@@ -135,6 +135,7 @@ let blogsToLoad = null;
 const pathLocation = window.location.pathname;
 let blogType = null;
 let allBlogs = false;
+const semanticAdjust = null;
 
 const initialiseBlogs = () =>{
     const blogGrid = document.querySelector('.grid');
@@ -144,9 +145,14 @@ const initialiseBlogs = () =>{
     if (window.location.pathname === "/WSOA3028A_1894979/")
     {
         blogsToLoad = 3;
+        allBlogs = true;
+        semanticAdjust = "h3";
     }
     else
     {
+
+        semanticAdjust = "h2";
+
         blogsToLoad = blogItems.length;
 
         if (window.location.pathname === "/WSOA3028A_1894979/Blogs/AllBlogsP1.html")
@@ -188,8 +194,8 @@ const initialiseBlogs = () =>{
             const img = document.createElement("img");
             img.src = "/WSOA3028A_1894979" + blogItems[i].blogImagePreview.src;
             img.alt = blogItems[i].blogImagePreview.alt;
-            img.width = "400";
-            img.height = "400";
+            img.width = "320";
+            img.height = "202";
             img.title = blogItems[i].blogImagePreview.imageTitle;
         
             const header = document.createElement("header");
@@ -213,10 +219,11 @@ const initialiseBlogs = () =>{
             }
 
             headerP.innerText = blogItems[i].blogType;
-            const headingThree = document.createElement("h3");
-            headingThree.innerText = blogItems[i].title;
+            
+            const blogTitle = document.createElement(semanticAdjust);
+            blogTitle.innerText = blogItems[i].title;
             header.appendChild(headerP)
-            header.appendChild(headingThree);
+            header.appendChild(blogTitle);
             
             const linkP = document.createElement("p");
             linkP.innerText = blogItems[i].blogDescription;
