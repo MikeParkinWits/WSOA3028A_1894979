@@ -40,9 +40,9 @@
 
 */
 
-/* ----------------
-  1. GLOBAL STYLING
-   ---------------- */
+/* ----------------------------------
+  1. GLOBAL STYLING - DESKTOP FIRST
+   ---------------------------------- */
 
 body {
   margin: auto;
@@ -87,7 +87,7 @@ a {
 
 h1 {
   font-size: 5rem;
-  margin: 0.4em;
+  margin: 0.3em;
 }
 
 h2 {
@@ -236,7 +236,7 @@ nav a {
 }
 
 .banner-text h1 {
-  margin: 1.3em;
+  margin: 1.3em 1em 1em 1em;
 }
 
 .banner-text p {
@@ -677,71 +677,46 @@ nav a {
     margin-top: 2em;
   }
   .banner-text h1 {
-    font-size: 3.5em;
-  }
-  .banner-text p {
-    font-size: 1.3em;
-  }
-
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .banner-text {
-  }
-  .banner-text h1 {
     font-size: 3em;
   }
+
   .banner-text p {
-    line-height: 29em;
+    margin-top: 20em;
     font-size: 1em;
   }
 
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .banner-text {
-  }
-  .banner-text h1 {
-    font-size: 3em;
-  }
-  .banner-text p {
-    line-height: 29em;
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1200px) {
   .photos {
     column-count: 4;
   }
 }
+@media only screen and (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 3em;
+  }
+  .banner-text p {
+    margin-top: 17em;
+    font-size: 1em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photos {
+    column-count: 2;
+  }
+}
+
 @media (max-width: 1000px) {
   .photos {
     column-count: 3;
   }
 }
-@media (max-width: 800px) {
-  .photos {
-    column-count: 2;
-  }
-}
+
 @media (max-width: 400px) {
   .photos {
     column-count: 1;
