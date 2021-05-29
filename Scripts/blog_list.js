@@ -135,7 +135,7 @@ let blogsToLoad = null;
 const pathLocation = window.location.pathname;
 let blogType = null;
 let allBlogs = false;
-const semanticAdjust = null;
+let semanticAdjust = null;
 
 const initialiseBlogs = () =>{
     const blogGrid = document.querySelector('.grid');
