@@ -541,27 +541,6 @@ nav a {
   border-radius: 1.5%;
 }
 
-@media (max-width: 1200px) {
-  .photos {
-    column-count: 4;
-  }
-}
-@media (max-width: 1000px) {
-  .photos {
-    column-count: 3;
-  }
-}
-@media (max-width: 800px) {
-  .photos {
-    column-count: 2;
-  }
-}
-@media (max-width: 400px) {
-  .photos {
-    column-count: 1;
-  }
-}
-
 /* 8.3 SOCIAL MEDIA GRID */
 
 .center-text {
@@ -744,5 +723,26 @@ nav a {
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .photos {
+    column-count: 4;
+  }
+}
+@media (max-width: 1000px) {
+  .photos {
+    column-count: 3;
+  }
+}
+@media (max-width: 800px) {
+  .photos {
+    column-count: 2;
+  }
+}
+@media (max-width: 400px) {
+  .photos {
+    column-count: 1;
   }
 }
