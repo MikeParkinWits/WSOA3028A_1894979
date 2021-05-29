@@ -1,4 +1,14 @@
 const blogItems = [
+    {title: "Information Geographies - A Critical Reflection", blogLocation: "/Blogs/TheoryBlogs/Blog14.html",
+        blogImagePreview: {
+            src: "/Images/TheoryBlogs/Blog14/Blog14-Preview-Image.jpg",
+            alt: "A person drawing wireframes on a piece of paper",
+            imageTitle: "A person drawing wireframes for their app"},
+        blogType: "Theory",
+        blogDescription: "Here I give a critical reflection on the reading Towards a Study of Information Geographies",
+        blogAuthor: "Michael Parkin",
+        blogDate: "30 April 2021"
+    },
     {title: "Why Balancing UI and UX Design is Crucial", blogLocation: "/Blogs/TheoryBlogs/Blog13.html",
         blogImagePreview: {
             src: "/Images/TheoryBlogs/Blog13/Blog13-Preview-Image.jpg",

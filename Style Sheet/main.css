@@ -291,7 +291,7 @@ nav a {
   min-width: 17rem;
   background-color: rgb(253, 253, 253);
   max-height: 100%;
-  height: 25rem;
+  height: 26rem;
   text-align: left;
 
   border-radius: 2%;
@@ -577,19 +577,25 @@ nav a {
   max-width: 50rem;
   margin: 0 auto;
   text-align: left;
+  min-width: 5rem;
 }
 
 .blog-content h2 {
   line-height: 5rem;
 }
 
-.blog-text {
+.blog-header {
   display: inline-block;
+  margin: 0rem 8rem 0rem 10rem;
+}
+
+.blog-text {
   text-align: left;
 
-  margin: 0rem 8rem 2rem 8rem;
-
   line-height: 1.8rem;
+
+  display: inline-block;
+  margin: 0rem 8rem 2rem 10rem;
 }
 
 .blog-info {
@@ -626,6 +632,10 @@ nav a {
   text-align: center;
 }
 
+.blog-footer {
+  margin: 0rem 8rem 0rem 10rem;
+  min-width: 52rem;
+}
 /* 9.2 ABOUT ME */
 
 .about-me-page {
