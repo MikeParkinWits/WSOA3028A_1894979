@@ -316,7 +316,8 @@ nav a {
   object-position: 50% 20%;
 }
 
-.blog-card h3 {
+.blog-card h3,
+.blog-card h2 {
   margin: 0.5rem 0.2rem 0.3rem 0.4rem;
   font-size: 1.25rem;
 }
