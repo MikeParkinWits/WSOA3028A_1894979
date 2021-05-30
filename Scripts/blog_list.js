@@ -35,7 +35,7 @@ const blogItems = [
             alt: "A picture of a tree at sunrise",
             imageTitle: "A picture of a tree at sunrise in Africa"},
         blogType: "Creative",
-        blogDescription: "Here I explain the next chapter in my crazy story!",
+        blogDescription: "Thought this story couldn't get crazier? Well, it's just getting started!",
         blogAuthor: "Jake Sky",
         blogDate: "14 May 2021"
     },
