@@ -1,11 +1,31 @@
 const blogItems = [
+    {title: "Updated Website Wireframes", blogLocation: "/Blogs/WebDevBlogs/Blog19.html",
+        blogImagePreview: {
+            src: "/Images/WebDevelopmentImages/Blog19-Preview-Image.jpg",
+            alt: "A top down view showing a comput above a mobile app wireframe design",
+            imageTitle: "A top down view showing a mobile app wireframe design"},
+        blogType: "Website Development",
+        blogDescription: "In this blog post I give my updated website wireframes",
+        blogAuthor: "Michael Parkin",
+        blogDate: "28 May 2021"
+    },
+    {title: "Website Style Guide", blogLocation: "/Blogs/WebDevBlogs/Blog18.html",
+        blogImagePreview: {
+            src: "/Images/WebDevelopmentImages/Blog18-Preview-Image.jpg",
+            alt: "A picture of a computer screen on a table",
+            imageTitle: "A picture of a computer screen on a table"},
+        blogType: "Website Development",
+        blogDescription: "In this blog post I show my websites style guide",
+        blogAuthor: "Michael Parkin",
+        blogDate: "28 May 2021"
+    },
     {title: "The Digital Divide in South Africa", blogLocation: "/Blogs/TheoryBlogs/Blog17.html",
         blogImagePreview: {
             src: "/Images/TheoryBlogs/Blog17/Blog17-Preview-Image.jpg",
-            alt: "A picture of a tree at sunrise",
-            imageTitle: "A picture of a tree at sunrise in Africa"},
+            alt: "A black and green picture showing a cellular signal and a wifi signal",
+            imageTitle: "A picture of a cellular, and wifi, symbol"},
         blogType: "Theory",
-        blogDescription: "The digital divide is a huge problem, and here i explain why it's a bigger problem for South Africa",
+        blogDescription: "The digital divide is a huge problem, and here I explain why it's a bigger problem for South Africa",
         blogAuthor: "Michael Parkin",
         blogDate: "21 May 2021"
     },
@@ -180,8 +200,6 @@ let semanticAdjust = null;
 const initialiseBlogs = () =>{
     const blogGrid = document.querySelector('.grid');
 
-    console.log(window.location.pathname);
-
     if (window.location.pathname === "/WSOA3028A_1894979/" || window.location.pathname === "/WSOA3028A_1894979/index.html" || window.location.pathname === "/")
     {
         blogsToLoad = 3;
@@ -217,8 +235,6 @@ const initialiseBlogs = () =>{
         }
     }
 
-
-    console.log(blogsToLoad);
 
     for (let i=0; i<blogsToLoad; i++){
 

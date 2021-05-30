@@ -452,6 +452,8 @@ nav a {
 
   padding-bottom: 1em;
   margin: 0em 0em 1em 8em;
+
+  line-height: 1.5rem;
 }
 
 .past-client-card img {
@@ -636,6 +638,7 @@ nav a {
   margin: 0rem 8rem 0rem 10rem;
   min-width: 52rem;
 }
+
 /* 9.2 ABOUT ME */
 
 .about-me-page {
@@ -644,6 +647,7 @@ nav a {
   width: 100%;
   max-width: 77.5rem;
   margin: 0 auto;
+  line-height: 1.5rem;
 }
 
 .about-profile-picture {
@@ -660,7 +664,7 @@ nav a {
   padding-right: 3rem;
 }
 
-.about-me-page p {
+.about-me-text {
   margin-left: 1.5rem;
   max-width: 50%;
   min-width: 30%;
@@ -697,6 +701,10 @@ nav a {
 
   .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .social-media-grid {
+    grid-template-columns: 1fr;
   }
 
   .photos {
