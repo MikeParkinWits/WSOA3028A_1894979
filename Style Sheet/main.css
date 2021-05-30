@@ -32,9 +32,8 @@
     
     9. PAGE SPECIFIC STYLING
 
-      9.1 STANDARD BLOG PAGE
+      9.1 STANDARD PAGE LAYOUT
       9.2 ABOUT ME PAGE
-      9.3 REFERENCE LIST PAGE
 
     10. RESEPONSIVE DESIGN
 
@@ -569,12 +568,12 @@ nav a {
     9. PAGE SPECIFIC STYLING 
    ---------------------------- */
 
-/* 9.1 STANDARD BLOG PAGE */
+/* 9.1 STANDARD PAGE LAYOUT */
 
-.blog-text,
-.blog-header,
-.blog-content h2,
-.blog-references {
+.standard-page-content,
+.standard-page-header,
+.standard-page h2,
+.standard-page-references {
   width: 100%;
   max-width: 50rem;
   margin: 0 auto;
@@ -582,16 +581,16 @@ nav a {
   min-width: 5rem;
 }
 
-.blog-content h2 {
-  line-height: 5rem;
+.standard-page h2 {
+  line-height: 4rem;
 }
 
-.blog-header {
+.standard-page-header {
   display: inline-block;
   margin: 0rem 8rem 0rem 10rem;
 }
 
-.blog-text {
+.standard-page-content {
   text-align: left;
 
   line-height: 1.8rem;
@@ -600,43 +599,48 @@ nav a {
   margin: 0rem 8rem 2rem 10rem;
 }
 
-.blog-info {
+.standard-page-details {
   padding-bottom: 1em;
   font-size: 20px;
 }
 
-.blog-name {
+.standard-page-title {
   margin-bottom: 0.1em;
   margin-left: 0em;
 }
 
-.blog-content h2 {
+.standard-page h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.blog-references {
+.standard-page-references {
   margin-bottom: 1rem;
   line-height: 1.8rem;
 }
 
-.blog-references li {
+.standard-page-references li {
   display: list-item;
   list-style: circle;
 }
 
-.blog-references a {
+.standard-page-references a {
   text-decoration: underline;
   color: blue;
 }
 
-.blog-content figure {
+.standard-page figure {
   text-align: center;
 }
 
-.blog-footer {
+.standard-page-footer {
   margin: 0rem 8rem 0rem 10rem;
   min-width: 52rem;
+}
+
+.standard-page-content a {
+  text-decoration: underline;
+  color: blue;
 }
 
 /* 9.2 ABOUT ME */
@@ -668,18 +672,6 @@ nav a {
   margin-left: 1.5rem;
   max-width: 50%;
   min-width: 30%;
-}
-
-/* 9.3 REFERENCE LIST */
-
-.reference-list-text p {
-  margin-left: 7rem;
-  text-align: left;
-}
-
-.reference-list-text a {
-  text-decoration: underline;
-  color: blue;
 }
 
 /* ------------------------
