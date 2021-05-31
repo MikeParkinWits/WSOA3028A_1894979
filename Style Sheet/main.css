@@ -55,9 +55,6 @@ body {
   box-sizing: border-box;
 
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
 }
 
 ul {
@@ -283,6 +280,22 @@ nav a {
   box-shadow: 4px 4px 20px 4px rgb(165, 165, 165);
 }
 
+.social-media-card h3,
+.social-media-card p,
+.past-client-card h3,
+.past-client-card p {
+  margin: 0.3rem 0.1rem 0rem 0rem;
+  text-align: left;
+}
+
+.social-media-card img,
+.past-client-card img {
+  max-width: 100%;
+  object-position: 80% 50%;
+
+  float: left;
+}
+
 /* 6.1 BLOG CARD */
 
 .blog-card {
@@ -421,17 +434,8 @@ nav a {
   transition: 0.25s;
 }
 
-.social-media-card img {
-  max-width: 100%;
-  object-position: 80% 50%;
-
-  float: left;
-}
-
 .social-media-card h3,
 .social-media-card p {
-  margin: 0.3rem 0.1rem 0rem 0rem;
-  text-align: left;
   margin-left: 30%;
   padding-left: 1.1rem;
 }
@@ -443,33 +447,24 @@ nav a {
 /* 6.4 PAST CLIENTS CARD */
 
 .past-client-card {
-  max-width: 60rem;
+  max-width: 52rem;
   min-width: 40rem;
   width: auto;
 
   border-bottom: 1px solid rgb(184, 184, 184);
 
   padding-bottom: 1em;
-  margin: 0em 0em 1em 8em;
+  margin: 0em 0em 1em 15em;
 
   line-height: 1.5rem;
 }
 
 .past-client-card img {
-  max-width: 100%;
-  object-position: 80% 50%;
-
-  float: left;
-
-  padding-bottom: 1em;
-
   margin-top: 1em;
 }
 
 .past-client-card h3,
 .past-client-card p {
-  margin: 0.3rem 0.1rem 0rem 0rem;
-  text-align: left;
   margin-left: 14rem;
 }
 
@@ -509,11 +504,10 @@ nav a {
    ----------- */
 
 .grid,
-.center-text,
 .social-media-grid,
 .past-client-grid {
   width: 100%;
-  max-width: 77.5rem;
+  max-width: 57.5rem;
   margin: 0 auto;
   display: inline-grid;
   grid-auto-rows: minmax(100vh, autofit);
@@ -545,13 +539,8 @@ nav a {
 
 /* 8.3 SOCIAL MEDIA GRID */
 
-.center-text {
-  width: 100%;
-}
-
 .social-media-grid {
-  max-width: 65rem;
-  margin-left: 5rem;
+  margin-left: 10rem;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2% 0%;
   text-align: right;
@@ -560,8 +549,10 @@ nav a {
 /* 8.4 PAST CLIENT GRID */
 
 .past-client-grid {
+  max-width: 67.5rem;
   grid-template-columns: 1fr;
   text-align: right;
+  margin-left: -10rem;
 }
 
 /* ----------------------------
@@ -649,19 +640,20 @@ nav a {
   text-align: left;
   display: flex;
   width: 100%;
-  max-width: 77.5rem;
+  max-width: 67.5rem;
   margin: 0 auto;
   line-height: 1.5rem;
+  min-width: 5rem;
 }
 
 .about-profile-picture {
-  margin-left: 8rem;
+  margin-left: 10rem;
   float: left;
   margin-bottom: 1rem;
 }
 
 .social-links-below ul {
-  margin-left: 10rem;
+  margin-left: 12rem;
 }
 
 .social-links-below li {
@@ -670,8 +662,8 @@ nav a {
 
 .about-me-text {
   margin-left: 1.5rem;
-  max-width: 50%;
-  min-width: 30%;
+  max-width: 40%;
+  min-width: 40%;
 }
 
 /* ------------------------
