@@ -17,11 +17,9 @@ const portfolioItems = [
 
 let portfolioItemsToLoad = null;
 const pathLocation = window.location.pathname;
-let blogType = null;
-let allBlogs = false;
 let semanticAdjust = null;
 
-const initialiseBlogs = () =>{
+const initialisePortfolio = () =>{
     const blogGrid = document.querySelector('.portfolio-grid');
 
     if (window.location.pathname === "/WSOA3028A_1894979/" || window.location.pathname === "/WSOA3028A_1894979/index.html" || window.location.pathname === "/")
@@ -59,9 +57,9 @@ const initialiseBlogs = () =>{
 
             headerP.innerText = portfolioItems[i].portfolioDescription;
             
-            const blogTitle = document.createElement(semanticAdjust);
-            blogTitle.innerText = portfolioItems[i].title;
-            header.appendChild(blogTitle);
+            const portfolioTitle = document.createElement(semanticAdjust);
+            portfolioTitle.innerText = portfolioItems[i].title;
+            header.appendChild(portfolioTitle);
             header.appendChild(headerP)
         
             link.appendChild(img);
@@ -77,4 +75,4 @@ const initialiseBlogs = () =>{
 
 };
 
-document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
+document.addEventListener('DOMContentLoaded', () => initialisePortfolio());
