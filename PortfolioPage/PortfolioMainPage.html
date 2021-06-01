@@ -23,7 +23,8 @@
       property="og:description"
       content="Here you can see all my different portfolio work albums!"
     />
-    <script type="module" src="../Scripts/navbar.js"></script>
+    <script type="module" src="../Scripts/persistentElements.js"></script>
+    <script type="module" src="../Scripts/portfolioList.js"></script>
     <link rel="stylesheet" type="text/css" href="../Style Sheet/main.css" />
   </head>
 
@@ -34,42 +35,11 @@
 
     <main>
       <article>
-        <h1>Portfolio Pieces</h1>
+        <header>
+          <h1>Portfolio Pieces</h1>
+        </header>
 
-        <section>
-          <a class="portfolio-card" href="./PortfolioPiece1.html">
-            <img
-              src="../Images/PortfolioWork/Portfolio1/Japan1.jpg"
-              alt="Orange Pagoda in Japan"
-              width="434"
-              height="300"
-              title="A photo of a Japanese Pagoda"
-            />
-            <header>
-              <h2>Japan after Bloom</h2>
-              <p>
-                A collection of my favourite photos from my time was working in
-                Japan
-              </p>
-            </header></a
-          >
-        </section>
-
-        <section>
-          <a class="portfolio-card" href="./PortfolioPiece2.html">
-            <img
-              src="../Images/PortfolioWork/Portfolio2/America2.jpeg"
-              alt="America Flag on a mountain"
-              width="434"
-              height="300"
-              title="A photo of the American Flag"
-            />
-            <header>
-              <h2>Cali in the Winter</h2>
-              <p>A collection of my favourite photos from Cali in the Winter</p>
-            </header></a
-          >
-        </section>
+        <section class="portfolio-grid"></section>
       </article>
     </main>
     <a class="back-to-top-link" href="">&#9650;</a>
