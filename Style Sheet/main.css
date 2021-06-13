@@ -795,6 +795,8 @@ nav a {
   .portfolio-card h2 {
     margin: 0.5rem 0.2rem 0.3rem 0.4rem;
     font-size: 1.25rem;
+    padding-top: 0rem;
+    text-align: left;
   }
 
   .portfolio-card {
@@ -802,7 +804,7 @@ nav a {
     min-width: 17.5rem;
     background-color: rgb(253, 253, 253);
     max-height: 100%;
-    height: 26rem;
+    height: 18rem;
     text-align: left;
 
     border-radius: 2%;
