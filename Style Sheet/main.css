@@ -44,8 +44,8 @@
    ---------------------------------- */
 
 body {
-  margin: auto;
-  width: auto;
+  margin: 0rem;
+  width: 100%;
   text-align: center;
 
   background-color: #f7f7f7;
@@ -55,6 +55,8 @@ body {
   box-sizing: border-box;
 
   min-height: 100vh;
+
+  flex: 1 0 auto;
 }
 
 ul {
@@ -91,6 +93,7 @@ h2 {
   text-align: left;
   max-width: 50rem;
   margin: 0.5em 0em 0.5em 1.3em;
+  padding-top: 1rem;
 }
 
 /* -----------
@@ -115,58 +118,62 @@ nav a {
 
 .header-nav {
   top: 0rem;
-  text-align: left;
   position: sticky;
-  width: 100%;
   z-index: 1;
+
+  background-color: #ffffff;
+  border-bottom: #f1f1f1 solid 1px;
+  box-shadow: 0 1px 1px 1px rgba(224, 224, 224, 0.2);
 }
 
 .header-nav ul {
-  list-style: none;
-  display: inline-block;
-
-  width: 100%;
-  padding: 0;
+  display: flex;
   margin: 0;
-  background-color: #ffffff;
-  border-bottom: #f1f1f1 solid 1px;
+  flex-wrap: wrap;
+}
 
-  box-shadow: 0 1px 1px 1px rgba(224, 224, 224, 0.2);
+.header-nav li {
+  display: flex;
 }
 
 .logo,
 .logo a {
-  float: left;
-  padding: 0.2rem 0.2rem 0.1rem 0.4rem;
+  margin-right: auto;
+  padding: 0.2rem 0.2rem 0rem 0.4rem;
   border: none;
 }
 
 .nav-items {
-  float: right;
   position: relative;
-  line-height: 4.5rem;
-}
-
-.nav-items a {
-  padding: 0rem 2rem 0rem 2rem;
-  border-left: #d3d3d3 solid 1px;
+  align-items: center;
+  padding: 0rem;
 }
 
 .nav-items a:after {
   content: "";
   position: absolute;
-  top: -10%;
   left: 0%;
   width: 100%;
   height: 110%;
 }
 
+.hamburger-button {
+  background-color: transparent;
+  border: 0;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 /* 3.2 BLOG NAVIGATION BAR */
 
 .blogs-nav {
-  position: relative;
   margin: 1.5rem 0rem 2rem 0rem;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .blogs-nav li:last-child {
@@ -177,7 +184,7 @@ nav a {
 
 .main-footer {
   background-color: #dddddd;
-  width: 100%;
+  /* width: 100%; */
   padding: 2px 0 2px 0;
 
   box-shadow: 1px 1px 10px rgba(119, 119, 119, 0.2);
@@ -239,6 +246,41 @@ nav a {
   font-size: 1.6rem;
   margin-top: 22.5rem;
 }
+
+/*
+.banner-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 40rem;
+}
+
+.banner-image {
+  pointer-events: none;
+  position: absolute;
+  min-width: 10%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  mix-blend-mode: multiply;
+}
+
+.banner-text {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.banner-text h1 {
+  margin: 1.3em 1em 1em 1em;
+}
+
+.banner-text p {
+  font-size: 1.6rem;
+  margin-top: 22.5rem;
+}
+
+*/
 
 /* ----------------------
     5. BACK TO TOP LINK 
@@ -375,7 +417,7 @@ nav a {
 /* 6.2 PORTFOLIO CARD */
 
 .portfolio-card {
-  max-width: 43rem;
+  max-width: 39rem;
   min-width: 39rem;
   background-color: rgb(253, 253, 253);
   height: 100%;
@@ -539,7 +581,6 @@ nav a {
 /* 8.3 SOCIAL MEDIA GRID */
 
 .social-media-grid {
-  margin-left: 10rem;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2% 0%;
   text-align: right;
@@ -558,35 +599,42 @@ nav a {
     9. PAGE SPECIFIC STYLING 
    ---------------------------- */
 
+.standard-page,
+.standard-page-footer {
+  display: inline-flex;
+  flex-direction: column;
+  width: 55vw;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* 9.1 STANDARD PAGE LAYOUT */
 
 .standard-page-content,
 .standard-page-header,
 .standard-page h2,
 .standard-page-references {
-  width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
   text-align: left;
-  min-width: 5rem;
+}
+
+.standard-page-header h2 {
+  margin-left: 0rem;
 }
 
 .standard-page h2 {
   line-height: 4rem;
 }
 
-.standard-page-header {
-  display: inline-block;
-  margin: 0rem 8rem 0rem 10rem;
+.standard-page-content h2 {
+  margin-left: 0rem;
 }
 
 .standard-page-content {
   text-align: left;
 
   line-height: 1.8rem;
-
-  display: inline-block;
-  margin: 0rem 8rem 2rem 10rem;
+  flex-wrap: wrap;
 }
 
 .standard-page-details {
@@ -612,6 +660,7 @@ nav a {
 .standard-page-references li {
   display: list-item;
   list-style: circle;
+  margin-left: 1rem;
 }
 
 .standard-page-references a {
@@ -624,8 +673,7 @@ nav a {
 }
 
 .standard-page-footer {
-  margin: 0rem 8rem 0rem 10rem;
-  min-width: 52rem;
+  /* min-width: 52rem; */
 }
 
 .standard-page-content a {
@@ -633,35 +681,52 @@ nav a {
   color: blue;
 }
 
+.standard-page-footer h2 {
+  margin-top: 1rem;
+  margin-left: 0rem;
+  padding: 0rem;
+}
+
+.half-tone-background {
+  padding: 0;
+  margin: 0;
+}
+
+.standard-page-references {
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.standard-page-content img {
+  width: 100%;
+  height: 100%;
+}
+
 /* 9.2 ABOUT ME */
 
 .about-me-page {
   text-align: left;
-  display: flex;
-  max-width: 67.5rem;
-  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: row;
+  width: 60vw;
   line-height: 1.5rem;
-  min-width: 63rem;
 }
 
-.about-profile-picture {
-  margin-left: 10rem;
-  float: left;
-  margin-bottom: 1rem;
+.social-links-below {
+  text-align: center;
 }
 
 .social-links-below ul {
-  margin-left: 12rem;
-}
-
-.social-links-below li {
-  padding-right: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 .about-me-text {
   margin-left: 1.5rem;
-  max-width: 43%;
-  min-width: 40%;
+  width: 100%;
+  margin-top: -1rem;
 }
 
 /* ------------------------
@@ -681,6 +746,20 @@ nav a {
     font-size: 1em;
   }
 
+  .about-me-page {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    margin: 0rem;
+    margin-top: -1rem;
+  }
+
+  .about-profile-picture {
+    width: 70%;
+    height: 70%;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -695,19 +774,117 @@ nav a {
 }
 @media only screen and (max-width: 768px) {
   .banner-text h1 {
-    font-size: 3em;
+    font-size: 2.5rem;
   }
+
   .banner-text p {
-    margin-top: 17em;
-    font-size: 1em;
+    margin-top: 28rem;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio-card {
+    max-width: 18rem;
+    min-width: 15rem;
+    background-color: rgb(253, 253, 253);
+    max-height: 100%;
+    height: 26rem;
+    text-align: left;
+
+    border-radius: 2%;
+
+    box-shadow: 1px 1px 10px 1px rgb(165, 165, 165);
+
+    transition: all 0.25s ease-in-out;
+
+    overflow: hidden;
+
+    border: solid 1px rgb(204, 204, 204);
+
+    position: relative;
+  }
+
+  .portfolio-card img {
+    height: 10rem;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 2% 2% 0% 0%;
+    border-bottom: solid 2px rgb(70, 70, 70);
+    object-position: 50% 20%;
+  }
+
+  .portfolio-card header {
+    margin: 0em;
+    margin-top: 1em;
+    max-width: 100%;
+  }
+
+  .portfolio-card h3,
+  .portfolio-card h2 {
+    margin: 0.5rem 0.2rem 0.3rem 0.4rem;
+    font-size: 1.25rem;
+    padding-top: 10rem;
+  }
+
+  .portfolio-card p {
+    margin: 0.5rem 0.2rem 0.5rem 0.5rem;
   }
 
   .grid {
     grid-template-columns: 1fr;
+    margin-left: 0rem;
+    padding-left: 0rem;
   }
 
   .photos {
     column-count: 2;
+  }
+
+  .nav-items a {
+    display: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .nav-items a.active {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    border-top: 0.08rem solid rgb(204, 204, 204);
+  }
+
+  .blog-nav-items a {
+    display: inline-flex;
+    width: 80%;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    border-top: 0.08rem solid rgb(204, 204, 204);
+    border-left: 0px;
+  }
+
+  .blogs-nav li:last-child {
+    border-right: none;
   }
 }
 

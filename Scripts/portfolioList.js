@@ -1,17 +1,31 @@
 const portfolioItems = [
-    {title: "Japan after Bloom", portfolioLocation: "/PortfolioPage/PortfolioPiece1.html",
-        potfolioImagePreview: {
-            src: "/Images/PortfolioWork/Portfolio1/Japan1.jpg",
-            alt: "An Orange Pagoda in Japan",
-            imageTitle: "A photo of a Japanese Pagoda"},
-        portfolioDescription: "A collection of my favourite photos from my time was working in Japan",
-    },
+    {title: "Life in the City", portfolioLocation: "/PortfolioPage/PortfolioPiece4.html",
+    potfolioImagePreview: {
+        src: "/Images/PortfolioWork/Portfolio4/Urban1.jpeg",
+        alt: "Two statues at an intersection",
+        imageTitle: "Two statues at an intersection"},
+    portfolioDescription: "Some photos taken in the city of Johannesburg while scouting for locations for my upcoming movie",
+},
+    {title: "Nirox in Lockdown", portfolioLocation: "/PortfolioPage/PortfolioPiece3.html",
+    potfolioImagePreview: {
+        src: "/Images/PortfolioWork/Portfolio3/Nirox3.jpeg",
+        alt: "A sculpture of a person sitting on a lawn",
+        imageTitle: "A sculpture of a person sitting on a lawn"},
+    portfolioDescription: "Some photos taken during lockdown while scouting locations for my movie in Johannesburg",
+},
     {title: "Cali in the Winter", portfolioLocation: "/PortfolioPage/PortfolioPiece2.html",
     potfolioImagePreview: {
         src: "/Images/PortfolioWork/Portfolio2/America2.jpeg",
         alt: "America Flag on a mountain",
         imageTitle: "A photo of an American Flag"},
     portfolioDescription: "A collection of my favourite photos from Cali in the Winter",
+},
+{title: "Japan after Bloom", portfolioLocation: "/PortfolioPage/PortfolioPiece1.html",
+potfolioImagePreview: {
+    src: "/Images/PortfolioWork/Portfolio1/Japan1.jpg",
+    alt: "An Orange Pagoda in Japan",
+    imageTitle: "A photo of a Japanese Pagoda"},
+portfolioDescription: "A collection of my favourite photos from my time was working in Japan",
 }
 ]
 

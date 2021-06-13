@@ -1,4 +1,14 @@
 const blogItems = [
+    {title: "The Search Begins", blogLocation: "/Blogs/CreativeBlogs/Blog20.html",
+        blogImagePreview: {
+            src: "/Images/CreativeImages/Blog20/Blog20-Preview-Image.jpg",
+            alt: "A picture of a Sculpture Park and multiple brown statues",
+            imageTitle: "A picture of a Sculpture Park"},
+        blogType: "Creative",
+        blogDescription: "Here I tell you about the start of our location scouting in South Africa!",
+        blogAuthor: "Jake Sky",
+        blogDate: "4 June 2021"
+    },
     {title: "Updated Website Wireframes", blogLocation: "/Blogs/WebDevBlogs/Blog19.html",
         blogImagePreview: {
             src: "/Images/WebDevelopmentImages/Blog19-Preview-Image.jpg",
@@ -309,3 +319,20 @@ const initialiseBlogs = () =>{
 };
 
 document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const hamburgerButton = document.querySelector(".hamburger-button-blog");
+    const navItems = document.querySelectorAll(".blog-nav-items a");
+
+
+
+    hamburgerButton.addEventListener('click', () => {
+        for (let i = 0; i<4;i++){
+            navItems[i].classList.toggle("active");
+        }
+        
+    }
+
+    );
+  });

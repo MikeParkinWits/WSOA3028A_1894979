@@ -1,8 +1,8 @@
 const menuOptions = [
-    {title: "Contact Me", link: "/WSOA3028A_1894979/ContactPage/ContactMePage.html"},
-    {title: "About Me", link: "/WSOA3028A_1894979/AboutPage/AboutMePage.html"},
+    {title: "Portfolio", link: "/WSOA3028A_1894979/PortfolioPage/PortfolioMainPage.html"},
     {title: "Blog", link: "/WSOA3028A_1894979/Blogs/AllBlogsP1.html"},
-    {title: "Portfolio", link: "/WSOA3028A_1894979/PortfolioPage/PortfolioMainPage.html"}
+    {title: "About Me", link: "/WSOA3028A_1894979/AboutPage/AboutMePage.html"},
+    {title: "Contact Me", link: "/WSOA3028A_1894979/ContactPage/ContactMePage.html"}
 ]
 
 const socialMediaLinks = [
@@ -35,6 +35,25 @@ const initialiseMenu = () =>{
     const ul = document.createElement("ul");
 
     initialiseMenuLogo(ul);
+
+    
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "hamburger-button";
+
+    const buttonImg = document.createElement("img");
+    buttonImg.src = "/WSOA3028A_1894979/Images/menu_hamburger.png";
+    buttonImg.width = 20;
+    buttonImg.height = 20;
+    buttonImg.alt = "Hamburger Menu";
+
+    button.appendChild(buttonImg);
+
+    const hamli = document.createElement("li");
+
+    hamli.appendChild(button);
+
+    ul.appendChild(hamli);
 
     for (let option of menuOptions){
         const li = document.createElement("li");
@@ -137,4 +156,31 @@ scrollToTopButton.onclick = function(scroll){
 }
 
 
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => initialiseMenu(), initialiseFooter(), scrollFunction());
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const hamburgerButton = document.querySelector(".hamburger-button");
+    const navItems = document.querySelectorAll(".nav-items a");
+
+
+
+    hamburgerButton.addEventListener('click', () => {
+        for (let i = 0; i<4;i++){
+            navItems[i].classList.toggle("active");
+        }
+        
+    }
+
+    );
+  });
+
