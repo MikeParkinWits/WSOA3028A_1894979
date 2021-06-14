@@ -37,6 +37,10 @@
 
     10. RESEPONSIVE DESIGN
 
+      10.1 TABLET
+      10.2 MOBILE
+      10.3 PHOTO GRID
+
 */
 
 /* ----------------------------------
@@ -54,9 +58,12 @@ body {
 
   box-sizing: border-box;
 
-  min-height: 100vh;
+  min-height: 100%;
 
+  /*
   flex: 1 0 auto;
+
+  */
 }
 
 ul {
@@ -70,8 +77,14 @@ li {
 .half-tone-background {
   background-color: #f0f0f0;
 
+  /*
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
+
+  */
+
+  padding: 0;
+  margin: 0;
 }
 
 /* -------------
@@ -161,11 +174,9 @@ nav a {
   background-color: transparent;
   border: 0;
   color: black;
-  font-size: 1.5rem;
   cursor: pointer;
   display: none;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 /* 3.2 BLOG NAVIGATION BAR */
@@ -191,7 +202,7 @@ nav a {
 
   color: #141414;
   position: relative;
-  margin-top: auto;
+  margin-top: 0%;
 }
 
 .main-footer a {
@@ -223,7 +234,6 @@ nav a {
 }
 
 .banner-image {
-  pointer-events: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -348,7 +358,7 @@ nav a {
 
 .blog-card {
   max-width: 20rem;
-  min-width: 17rem;
+  min-width: 17.5rem;
   background-color: rgb(253, 253, 253);
   max-height: 100%;
   height: 26rem;
@@ -426,7 +436,6 @@ nav a {
   max-width: 39rem;
   min-width: 39rem;
   background-color: rgb(253, 253, 253);
-  height: 100%;
   height: 18rem;
   text-align: left;
 
@@ -444,7 +453,7 @@ nav a {
 }
 
 .portfolio-card img {
-  height: 300px;
+  height: 19em;
   width: 27em;
   max-width: 100%;
   object-fit: cover;
@@ -725,6 +734,7 @@ nav a {
 .standard-page-references {
   margin-bottom: 1rem;
   line-height: 1.8rem;
+  padding: 0rem;
 }
 
 .standard-page-references li {
@@ -757,15 +767,23 @@ nav a {
   padding: 0rem;
 }
 
+/*
+
 .half-tone-background {
   padding: 0;
   margin: 0;
 }
 
+*/
+
+/*
+
 .standard-page-references {
   padding: 0rem;
   margin: 0rem;
 }
+
+*/
 
 .standard-page-content img {
   width: 100%;
@@ -804,10 +822,25 @@ nav a {
     10. RESPONSIVE DESIGN 
    ------------------------ */
 
+/* 10.1 TABLET - Based on the iPad */
+
 @media only screen and (max-width: 1024px) {
+  .standard-page {
+    width: 70vw;
+  }
+
+  .standard-page-references {
+    width: 70vw;
+  }
+
+  .standard-page-footer {
+    width: 70vw;
+  }
+
   .banner-text {
     margin-top: 2em;
   }
+
   .banner-text h1 {
     font-size: 3em;
   }
@@ -840,9 +873,12 @@ nav a {
   }
 
   .photos {
-    column-count: 4;
+    column-count: 3;
   }
 }
+
+/* 10.2 MOBILE - Based on iPhone X and other popular/similair devices */
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -897,35 +933,18 @@ nav a {
   .portfolio-card {
     max-width: 20rem;
     min-width: 17.5rem;
-    background-color: rgb(253, 253, 253);
     max-height: 100%;
-    height: 18rem;
-    text-align: left;
-
-    border-radius: 2%;
-
-    box-shadow: 1px 1px 10px 1px rgb(165, 165, 165);
 
     transition: all 0.25s ease-in-out;
-
-    overflow: hidden;
-
-    border: solid 1px rgb(204, 204, 204);
-
-    position: relative;
   }
 
   .portfolio-card img {
     height: 10rem;
-    max-width: 100%;
-    object-fit: cover;
     border-radius: 2% 2% 0% 0%;
-    border-bottom: solid 2px rgb(70, 70, 70);
     object-position: 50% 20%;
   }
 
   .portfolio-card header {
-    margin: 0em;
     margin-top: 1em;
     max-width: 100%;
   }
@@ -968,10 +987,7 @@ nav a {
 
   .nav-items a.active {
     display: flex;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
+    padding: 1rem 0rem 1rem 0rem;
 
     border-top: 0.08rem solid rgb(204, 204, 204);
   }
@@ -980,10 +996,9 @@ nav a {
     display: inline-flex;
     width: 80%;
     justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
+
+    padding: 1rem 0rem 1rem 0rem;
+
     border-top: 0.08rem solid rgb(204, 204, 204);
     border-left: 0px;
   }
@@ -1034,11 +1049,7 @@ nav a {
   }
 }
 
-@media (max-width: 1000px) {
-  .photos {
-    column-count: 3;
-  }
-}
+/* 10.3 PHOTO GRID */
 
 @media (max-width: 400px) {
   .photos {

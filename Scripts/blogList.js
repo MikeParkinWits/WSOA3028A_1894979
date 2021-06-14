@@ -319,20 +319,3 @@ const initialiseBlogs = () =>{
 };
 
 document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
-
-document.addEventListener('DOMContentLoaded', () => {
-    
-    const hamburgerButton = document.querySelector(".hamburger-button-blog");
-    const navItems = document.querySelectorAll(".blog-nav-items a");
-
-
-
-    hamburgerButton.addEventListener('click', () => {
-        for (let i = 0; i<4;i++){
-            navItems[i].classList.toggle("active");
-        }
-        
-    }
-
-    );
-  });

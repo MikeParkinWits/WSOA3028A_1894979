@@ -44,7 +44,7 @@ const initialiseMenu = () =>{
     const buttonImg = document.createElement("img");
     buttonImg.src = "/WSOA3028A_1894979/Images/menu_hamburger.png";
     buttonImg.width = 20;
-    buttonImg.height = 20;
+    buttonImg.height = 14;
     buttonImg.alt = "Hamburger Menu";
 
     button.appendChild(buttonImg);
@@ -167,8 +167,7 @@ scrollToTopButton.onclick = function(scroll){
 
 document.addEventListener("DOMContentLoaded", () => initialiseMenu(), initialiseFooter(), scrollFunction());
 
-document.addEventListener('DOMContentLoaded', () => {
-    
+const HamburgerMenu = () => {
     const hamburgerButton = document.querySelector(".hamburger-button");
     const navItems = document.querySelectorAll(".nav-items a");
 
@@ -182,5 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     );
-  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {HamburgerMenu()});
 
