@@ -13,33 +13,18 @@
     4. BANNER
 
     5. BACK TO TOP LINK
-
-    6. CARDS
-
-      6.1 BLOG CARD
-      6.2 PORTFOLIO CARD
-      6.3 SOCIAL MEDIA CARD
-      6.4 PAST CLIENT CARD
     
-    7. BUTTONS
-
-    8. GRIDS
-
-      8.1 BLOG GRID
-      8.2 GALLERY GRID
-      8.3 SOCIAL MEDIA GRID
-      8.4 PAST CLIENT GRID
+    6. BUTTONS
     
-    9. PAGE SPECIFIC STYLING
+    7. PAGE SPECIFIC STYLING
 
-      9.1 STANDARD PAGE LAYOUT
-      9.2 ABOUT ME PAGE
+      7.1 STANDARD PAGE LAYOUT
+      7.2 ABOUT ME PAGE
 
-    10. RESEPONSIVE DESIGN
+    8. RESEPONSIVE DESIGN
 
-      10.1 TABLET
-      10.2 MOBILE
-      10.3 PHOTO GRID
+      8.1 TABLET
+      8.2 MOBILE
 
 */
 
@@ -59,11 +44,6 @@ body {
   box-sizing: border-box;
 
   min-height: 100%;
-
-  /*
-  flex: 1 0 auto;
-
-  */
 }
 
 ul {
@@ -76,12 +56,6 @@ li {
 
 .half-tone-background {
   background-color: #f0f0f0;
-
-  /*
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-
-  */
 
   padding: 0;
   margin: 0;
@@ -257,41 +231,6 @@ nav a {
   margin-top: 22.5rem;
 }
 
-/*
-.banner-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  height: 40rem;
-}
-
-.banner-image {
-  pointer-events: none;
-  position: absolute;
-  min-width: 10%;
-  max-height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  mix-blend-mode: multiply;
-}
-
-.banner-text {
-  font-size: 1.25rem;
-  color: white;
-}
-
-.banner-text h1 {
-  margin: 1.3em 1em 1em 1em;
-}
-
-.banner-text p {
-  font-size: 1.6rem;
-  margin-top: 22.5rem;
-}
-
-*/
-
 /* ----------------------
     5. BACK TO TOP LINK 
    ---------------------- */
@@ -315,286 +254,6 @@ nav a {
   color: rgb(150, 150, 150);
 }
 
-/* -----------
-    6. CARDS 
-   ----------- */
-
-.blog-card,
-.portfolio-card {
-  display: inline-block;
-  margin: 1rem 1rem 2.5rem;
-}
-
-.portfolio-card:hover,
-.blog-card:hover {
-  top: -2px;
-  box-shadow: 4px 4px 20px 4px rgb(165, 165, 165);
-}
-
-/*
-
-.past-client-card h3,
-.past-client-card p {
-  margin: 0.3rem 0.1rem 0rem 0rem;
-  text-align: left;
-}
-
-.past-client-card img {
-  max-width: 100%;
-  object-position: 80% 50%;
-
-  float: left;
-}
-
-*/
-
-.social-media-card a {
-  display: inline-flex;
-  margin: 1rem 1rem 2.5rem;
-  flex-direction: row;
-}
-
-/* 6.1 BLOG CARD */
-
-.blog-card {
-  max-width: 20rem;
-  min-width: 17.5rem;
-  background-color: rgb(253, 253, 253);
-  max-height: 100%;
-  height: 26rem;
-  text-align: left;
-
-  border-radius: 2%;
-
-  box-shadow: 1px 1px 10px 1px rgb(165, 165, 165);
-
-  transition: all 0.25s ease-in-out;
-
-  overflow: hidden;
-
-  border: solid 1px rgb(204, 204, 204);
-
-  position: relative;
-}
-
-.blog-card img {
-  height: 12.5rem;
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 2% 2% 0% 0%;
-  border-bottom: solid 2px rgb(70, 70, 70);
-  object-position: 50% 20%;
-}
-
-.blog-card h3,
-.blog-card h2 {
-  margin: 0.5rem 0.2rem 0.3rem 0.4rem;
-  font-size: 1.25rem;
-}
-
-.blog-card p {
-  margin: 0.5rem 0.2rem 0.5rem 0.5rem;
-}
-
-.blog-card footer {
-  width: 100%;
-
-  border-top: solid 1px rgb(194, 194, 194);
-
-  background-color: #eeeeee;
-
-  position: absolute;
-  bottom: 0;
-}
-
-.theory-blog,
-.character-blog,
-.creative-blog,
-.website-blog {
-  padding: 0.1rem 0rem 0.1rem 0rem;
-}
-
-.theory-blog {
-  color: rgb(224, 67, 67);
-}
-
-.character-blog {
-  color: rgb(64, 201, 201);
-}
-
-.creative-blog {
-  color: rgb(64, 96, 201);
-}
-
-.website-blog {
-  color: rgb(201, 64, 201);
-}
-
-/* 6.2 PORTFOLIO CARD */
-
-.portfolio-card {
-  max-width: 39rem;
-  min-width: 39rem;
-  background-color: rgb(253, 253, 253);
-  height: 18rem;
-  text-align: left;
-
-  border-radius: 2%;
-
-  box-shadow: 1px 1px 10px 1px rgb(165, 165, 165);
-
-  transition: 0.25s;
-
-  overflow: hidden;
-
-  border: solid 1px rgb(204, 204, 204);
-
-  position: relative;
-}
-
-.portfolio-card img {
-  height: 19em;
-  width: 27em;
-  max-width: 100%;
-  object-fit: cover;
-  border-left: solid 2px rgb(70, 70, 70);
-  object-position: 80% 50%;
-
-  float: right;
-}
-
-.portfolio-card h3,
-.portfolio-card h2 {
-  font-size: 30px;
-  max-width: 100%;
-  margin: 0.6em 0.1em 0.5em 0.5em;
-  line-height: 1.2em;
-}
-
-.portfolio-card header {
-  margin: 0em;
-  max-width: 37%;
-}
-
-.portfolio-card p {
-  margin: 1em 5em 10em 1em;
-  text-align: left;
-}
-
-/* 6.3 SOCIAL MEDIA CARD */
-
-.social-media-card img {
-  flex-direction: column;
-  align-content: flex-start;
-}
-
-.social-media-card {
-  flex-direction: column;
-  text-align: left;
-}
-
-.social-media-card p {
-  flex-direction: row;
-
-  justify-content: right;
-}
-
-.social-media-card .social-media-card-info {
-  padding-left: 1rem;
-}
-
-/*
-
-.social-media-card {
-  max-width: 25rem;
-  width: auto;
-
-  transition: 0.25s;
-}
-
-.social-media-card h3,
-.social-media-card p {
-  margin-left: 30%;
-  padding-left: 1.1rem;
-}
-
-.social-media-card h3 {
-  font-size: 2rem;
-}
-
-*/
-
-/* 6.4 PAST CLIENTS CARD */
-
-.past-client-card {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: left;
-  text-align: left;
-  margin-top: 1rem;
-  border-bottom: 1px solid rgb(184, 184, 184);
-}
-
-.past-client-card img {
-  align-self: flex-start;
-  width: 10rem;
-}
-
-.past-client {
-  justify-content: left;
-  text-align: left;
-}
-
-.past-client h3 {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-}
-
-.past-client p {
-  margin-top: 0.5rem;
-}
-
-.client-about {
-  margin-top: 0rem;
-  padding-left: 1.5rem;
-}
-
-/*
-
-.past-client-card {
-  max-width: 52rem;
-  width: auto;
-
-  border-bottom: 1px solid rgb(184, 184, 184);
-
-  padding-bottom: 1em;
-  margin: 0em 0em 1em 15em;
-
-  line-height: 1.5rem;
-}
-
-.past-client-card img {
-  margin-top: 1em;
-}
-
-.past-client-card h3,
-.past-client-card p {
-  margin-left: 14rem;
-}
-
-.past-client-card p {
-  padding: 0em 0em 0.2em 1em;
-  min-width: 35rem;
-}
-
-.past-client-card h3 {
-  padding-left: 0.5em;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-*/
-
 /* -------------
     7. BUTTONS 
    ------------- */
@@ -615,64 +274,6 @@ nav a {
   background-color: black;
   box-shadow: 4px 4px 30px 4px rgb(165, 165, 165);
 }
-
-/* -----------
-    8. GRIDS 
-   ----------- */
-
-.grid,
-.social-media-grid,
-.past-client-grid {
-  width: 100%;
-  max-width: 57.5rem;
-  margin: 0 auto;
-  display: inline-grid;
-  grid-auto-rows: minmax(100vh, autofit);
-}
-
-/* 8.1 BLOG GRID */
-
-.grid {
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0% 1%;
-}
-
-/* 8.2 PHOTO GRID */
-
-.photos {
-  column-count: 4;
-  column-gap: 0.7rem;
-  margin: 2rem;
-}
-
-.photos img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.7rem;
-
-  border-radius: 1.5%;
-}
-
-/* 8.3 SOCIAL MEDIA GRID */
-
-.social-media-grid {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2% 0%;
-}
-
-/* 8.4 PAST CLIENT GRID */
-
-/*
-
-.past-client-grid {
-  max-width: 67.5rem;
-  grid-template-columns: 1fr;
-  text-align: right;
-  margin-left: -10rem;
-}
-
-*/
 
 /* ----------------------------
     9. PAGE SPECIFIC STYLING 
@@ -722,13 +323,11 @@ nav a {
 }
 
 .standard-page-title {
-  margin-bottom: 0.1em;
-  margin-left: 0em;
+  margin: 0rem 0rem 0.1rem 0rem;
 }
 
 .standard-page h2 {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin: 0rem 0rem;
 }
 
 .standard-page-references {
@@ -752,38 +351,15 @@ nav a {
   text-align: center;
 }
 
-.standard-page-footer {
-  /* min-width: 52rem; */
-}
-
 .standard-page-content a {
   text-decoration: underline;
   color: blue;
 }
 
 .standard-page-footer h2 {
-  margin-top: 1rem;
-  margin-left: 0rem;
+  margin: 1rem 0rem 0rem 0rem;
   padding: 0rem;
 }
-
-/*
-
-.half-tone-background {
-  padding: 0;
-  margin: 0;
-}
-
-*/
-
-/*
-
-.standard-page-references {
-  padding: 0rem;
-  margin: 0rem;
-}
-
-*/
 
 .standard-page-content img {
   width: 100%;
@@ -863,18 +439,6 @@ nav a {
     width: 70%;
     height: 70%;
   }
-
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .social-media-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .photos {
-    column-count: 3;
-  }
 }
 
 /* 10.2 MOBILE - Based on iPhone X and other popular/similair devices */
@@ -920,56 +484,6 @@ nav a {
     margin-bottom: 0.5rem;
   }
 
-  .blog-card h3,
-  .blog-card h2,
-  .portfolio-card h3,
-  .portfolio-card h2 {
-    margin: 0.5rem 0.2rem 0.3rem 0.4rem;
-    font-size: 1.25rem;
-    padding-top: 0rem;
-    text-align: left;
-  }
-
-  .portfolio-card {
-    max-width: 20rem;
-    min-width: 17.5rem;
-    max-height: 100%;
-
-    transition: all 0.25s ease-in-out;
-  }
-
-  .portfolio-card img {
-    height: 10rem;
-    border-radius: 2% 2% 0% 0%;
-    object-position: 50% 20%;
-  }
-
-  .portfolio-card header {
-    margin-top: 1em;
-    max-width: 100%;
-  }
-
-  .portfolio-card h3,
-  .portfolio-card h2 {
-    margin: 0.5rem 0.2rem 0.3rem 0.4rem;
-    font-size: 1.25rem;
-    padding-top: 10rem;
-  }
-
-  .portfolio-card p {
-    margin: 0.5rem 0.2rem 0.5rem 0.5rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-left: 0rem;
-    padding-left: 0rem;
-  }
-
-  .photos {
-    column-count: 2;
-  }
-
   .nav-items a {
     display: none;
     width: 100%;
@@ -1007,52 +521,11 @@ nav a {
     border-right: none;
   }
 
-  .social-media-card a {
-    display: block;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .social-media-card .social-media-card-info {
-    padding-left: 0rem;
-  }
-
-  .social-media-grid {
-    text-align: center;
-    padding-left: 0rem;
-  }
-
-  .social-media-card-info h3 {
-    padding-left: 0rem;
-  }
-
-  .social-media-card img {
-    text-align: right;
-    justify-content: center;
-  }
-
   .standard-page-header h2 {
     line-height: 2.5rem;
   }
 
   .about-me-page {
     width: 80vw;
-  }
-
-  .past-client-card {
-    flex-direction: column;
-  }
-
-  .client-about {
-    padding-left: 0rem;
-    padding-top: 0.5rem;
-  }
-}
-
-/* 10.3 PHOTO GRID */
-
-@media (max-width: 400px) {
-  .photos {
-    column-count: 1;
   }
 }
