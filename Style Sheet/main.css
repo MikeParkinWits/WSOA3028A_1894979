@@ -43,7 +43,9 @@ body {
 
   box-sizing: border-box;
 
-  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -57,8 +59,8 @@ li {
 .half-tone-background {
   background-color: #f0f0f0;
 
-  padding: 0;
-  margin: 0;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 /* -------------
@@ -88,7 +90,6 @@ h2 {
    ----------- */
 
 nav li a {
-  color: black;
   transition: color 0.2s;
 }
 
@@ -98,7 +99,7 @@ nav li a:hover {
 
 nav a {
   padding: 0rem 2rem 0rem 2rem;
-  border-left: #d3d3d3 solid 1px;
+  border-left: #d3d3d3 solid 0.05rem;
 }
 
 /* 3.1 MAIN NAVIGATION BAR */
@@ -109,8 +110,8 @@ nav a {
   z-index: 1;
 
   background-color: #ffffff;
-  border-bottom: #f1f1f1 solid 1px;
-  box-shadow: 0 1px 1px 1px rgba(224, 224, 224, 0.2);
+  border-bottom: #f1f1f1 solid 0.05rem;
+  box-shadow: 0 0.05rem 0.05rem 0.05rem rgba(224, 224, 224, 0.2);
 }
 
 .header-nav ul {
@@ -147,7 +148,6 @@ nav a {
 .hamburger-button {
   background-color: transparent;
   border: 0;
-  color: black;
   cursor: pointer;
   display: none;
   padding: 0rem 1rem 0rem 1rem;
@@ -162,21 +162,20 @@ nav a {
 }
 
 .blogs-nav li:last-child {
-  border-right: #d3d3d3 solid 1px;
+  border-right: #d3d3d3 solid 0.05rem;
 }
 
 /* 3.3 MAIN FOOTER */
 
 .main-footer {
   background-color: #dddddd;
-  /* width: 100%; */
-  padding: 2px 0 2px 0;
+  padding: 0.1rem 0 0.1rem 0;
 
-  box-shadow: 1px 1px 10px rgba(119, 119, 119, 0.2);
+  box-shadow: 0.05rem 0.05rem 0.6rem rgba(119, 119, 119, 0.2);
 
   color: #141414;
   position: relative;
-  margin-top: 0%;
+  margin-top: auto;
 }
 
 .main-footer a {
@@ -242,7 +241,7 @@ nav a {
   right: 0;
   display: inline-flex;
 
-  margin: 0 1em 1em 0;
+  margin: 0em 1em 1em 0em;
   width: 2.5rem;
   height: 2.5rem;
   font-size: 2rem;
@@ -272,12 +271,14 @@ nav a {
 .button:hover {
   color: white;
   background-color: black;
-  box-shadow: 4px 4px 30px 4px rgb(165, 165, 165);
+  box-shadow: 0.25rem 0.25rem 1.9rem 0.25rem rgb(165, 165, 165);
 }
 
 /* ----------------------------
     9. PAGE SPECIFIC STYLING 
    ---------------------------- */
+
+/* 9.1 STANDARD PAGE LAYOUT */
 
 .standard-page,
 .standard-page-footer {
@@ -289,8 +290,6 @@ nav a {
   margin-bottom: 1rem;
 }
 
-/* 9.1 STANDARD PAGE LAYOUT */
-
 .standard-page-content,
 .standard-page-header,
 .standard-page h2,
@@ -298,16 +297,14 @@ nav a {
   text-align: left;
 }
 
-.standard-page-header h2 {
+.standard-page-header h2,
+.standard-page-content h2 {
   margin-left: 0rem;
 }
 
 .standard-page h2 {
   line-height: 4rem;
-}
-
-.standard-page-content h2 {
-  margin-left: 0rem;
+  margin: 0rem 0rem;
 }
 
 .standard-page-content {
@@ -324,10 +321,6 @@ nav a {
 
 .standard-page-title {
   margin: 0rem 0rem 0.1rem 0rem;
-}
-
-.standard-page h2 {
-  margin: 0rem 0rem;
 }
 
 .standard-page-references {
@@ -401,14 +394,8 @@ nav a {
 /* 10.1 TABLET - Based on the iPad */
 
 @media only screen and (max-width: 1024px) {
-  .standard-page {
-    width: 70vw;
-  }
-
-  .standard-page-references {
-    width: 70vw;
-  }
-
+  .standard-page,
+  .standard-page-references,
   .standard-page-footer {
     width: 70vw;
   }
@@ -439,6 +426,10 @@ nav a {
     width: 70%;
     height: 70%;
   }
+
+  .about-me-page {
+    width: 70vw;
+  }
 }
 
 /* 10.2 MOBILE - Based on iPhone X and other popular/similair devices */
@@ -448,19 +439,13 @@ nav a {
     font-size: 3rem;
   }
 
-  .standard-page {
-    width: 80vw;
-  }
-
   .standard-page-details {
     font-size: 1rem;
   }
 
-  .standard-page-references {
-    width: 80vw;
-  }
-
-  .standard-page-footer {
+  .standard-page-references,
+  .standard-page-footer,
+  .standard-page {
     width: 80vw;
   }
 

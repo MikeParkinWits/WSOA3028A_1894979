@@ -34,7 +34,7 @@
   text-align: left;
   border-radius: 2%;
 
-  box-shadow: 1px 1px 10px 1px rgb(165, 165, 165);
+  box-shadow: 0.05rem 0.05rem 0.6rem 0.05rem rgb(165, 165, 165);
 
   overflow: hidden;
 
@@ -54,7 +54,7 @@
 .portfolio-card:hover,
 .blog-card:hover {
   top: -2px;
-  box-shadow: 4px 4px 20px 4px rgb(165, 165, 165);
+  box-shadow: 0.25rem 0.25rem 1.25rem 0.25rem rgb(165, 165, 165);
 }
 
 /* 1.1 BLOG CARD */
@@ -69,7 +69,7 @@
 .blog-card img {
   height: 12.5rem;
   border-radius: 2% 2% 0% 0%;
-  border-bottom: solid 2px rgb(70, 70, 70);
+  border-bottom: solid 0.15rem rgb(70, 70, 70);
   object-position: 50% 20%;
 }
 
@@ -77,6 +77,7 @@
 .blog-card h2 {
   margin: 0.5rem 0.2rem 0.3rem 0.4rem;
   font-size: 1.25rem;
+  padding-top: 0rem;
 }
 
 .blog-card p {
@@ -86,7 +87,7 @@
 .blog-card footer {
   width: 100%;
 
-  border-top: solid 1px rgb(194, 194, 194);
+  border-top: solid 0.05rem rgb(194, 194, 194);
 
   background-color: #eeeeee;
 
@@ -128,7 +129,7 @@
 .portfolio-card img {
   height: 19em;
   width: 27em;
-  border-left: solid 2px rgb(70, 70, 70);
+  border-left: solid 0.15rem rgb(70, 70, 70);
   object-position: 80% 50%;
 
   float: right;
@@ -247,7 +248,7 @@
 
 .photos img {
   width: 100%;
-  height: auto;
+  height: 100%;
   margin-bottom: 0.7rem;
 
   border-radius: 1.5%;
@@ -302,7 +303,6 @@
   .portfolio-card h2 {
     margin: 0.5rem 0.2rem 0.3rem 0.4rem;
     font-size: 1.25rem;
-    padding-top: 0rem;
     text-align: left;
   }
 
@@ -312,7 +312,7 @@
     max-height: 100%;
 
     transition: all 0.25s ease-in-out;
-    border: solid 1px rgb(204, 204, 204);
+    border: solid 0.05rem rgb(204, 204, 204);
   }
 
   .portfolio-card img {

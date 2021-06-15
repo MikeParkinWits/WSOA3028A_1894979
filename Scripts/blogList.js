@@ -1,4 +1,24 @@
 const blogItems = [
+    {title: "Exploring the City", blogLocation: "/Blogs/CreativeBlogs/Blog22.html",
+        blogImagePreview: {
+            src: "/Images/CreativeImages/Blog22/Blog22-Preview-Image.jpg",
+            alt: "A picture of a glass building to the side",
+            imageTitle: "A picture of a glass building"},
+        blogType: "Creative",
+        blogDescription: "In this blog post I look at Dark UX, and the implications of using it",
+        blogAuthor: "Jake Sky",
+        blogDate: "11 June 2021"
+    },
+    {title: "What is Dark UX?", blogLocation: "/Blogs/TheoryBlogs/Blog21.html",
+        blogImagePreview: {
+            src: "/Images/TheoryBlogs/Blog21/Blog21-Preview-Image.jpg",
+            alt: "A black notepad with with wireframes on it",
+            imageTitle: "A picture of a black notepad with with wireframes on it"},
+        blogType: "Theory",
+        blogDescription: "In this blog post I look at Dark UX, and the implications of using it",
+        blogAuthor: "Michael Parkin",
+        blogDate: "8 June 2021"
+    },
     {title: "The Search Begins", blogLocation: "/Blogs/CreativeBlogs/Blog20.html",
         blogImagePreview: {
             src: "/Images/CreativeImages/Blog20/Blog20-Preview-Image.jpg",
