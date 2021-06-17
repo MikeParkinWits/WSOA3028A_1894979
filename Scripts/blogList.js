@@ -1,11 +1,31 @@
 const blogItems = [
+    {title: "The Problem with Social Media Algorithms", blogLocation: "/Blogs/TheoryBlogs/Blog24.html",
+        blogImagePreview: {
+            src: "/Images/TheoryBlogs/Blog24/Blog24-Preview-Image.jpg",
+            alt: "A photo of grew hacker code",
+            imageTitle: "Green Hacker Code"},
+        blogType: "Theory",
+        blogDescription: "Social Media algorithms are extremely powerful, but this power comes with some draw backs",
+        blogAuthor: "Michael Parkin",
+        blogDate: "16 June 2021"
+    },
+    {title: "Critcally analysing my Websites UI and UX Design", blogLocation: "/Blogs/TheoryBlogs/Blog23.html",
+        blogImagePreview: {
+            src: "/Images/TheoryBlogs/Blog23/Blog23-Preview-Image.jpg",
+            alt: "A photo of a laptop on a table with a plant next to it",
+            imageTitle: "A laptop on a table with a plant next to it"},
+        blogType: "Theory",
+        blogDescription: "Here I take a look at my websites UI and UX design, analysing it critically",
+        blogAuthor: "Michael Parkin",
+        blogDate: "14 June 2021"
+    },
     {title: "Exploring the City", blogLocation: "/Blogs/CreativeBlogs/Blog22.html",
         blogImagePreview: {
             src: "/Images/CreativeImages/Blog22/Blog22-Preview-Image.jpg",
             alt: "A picture of a glass building to the side",
             imageTitle: "A picture of a glass building"},
         blogType: "Creative",
-        blogDescription: "In this blog post I look at Dark UX, and the implications of using it",
+        blogDescription: "In this blog post I take you with me as we explore more locations, around Johannesburg, for our movie",
         blogAuthor: "Jake Sky",
         blogDate: "11 June 2021"
     },
