@@ -1,4 +1,24 @@
 const blogItems = [
+    {title: "Should you be worried about your Privacy in the Digital Age?", blogLocation: "/Blogs/TheoryBlogs/Blog26.html",
+        blogImagePreview: {
+            src:"/Images/TheoryBlogs/Blog26/Blog26-Preview-Image.jpg",
+            alt: "A photo of a neon sign that says 'Data has a better idea'",
+            imageTitle: "A photo of a neon sign"},
+        blogType: "Theory",
+        blogDescription: "Many people believe that tech companies are eavesdropping on their conversations, but are they?",
+        blogAuthor: "Michael Parkin",
+        blogDate: "18 June 2021"
+    },
+    {title: "Mobile Website Wireframes", blogLocation: "/Blogs/WebDevBlogs/Blog25.html",
+        blogImagePreview: {
+            src:"/Images/WebDevelopmentImages/Blog25-Preview-Image.jpg",
+            alt: "A top doen view of a smartphone with a website open",
+            imageTitle: "A photo of a phone on a table"},
+        blogType: "Website Development",
+        blogDescription: "In this web design blog post I will look at my mobile view wireframes",
+        blogAuthor: "Michael Parkin",
+        blogDate: "18 June 2021"
+    },
     {title: "The Problem with Social Media Algorithms", blogLocation: "/Blogs/TheoryBlogs/Blog24.html",
         blogImagePreview: {
             src: "/Images/TheoryBlogs/Blog24/Blog24-Preview-Image.jpg",
