@@ -29,7 +29,21 @@ const initialiseMenuLogo = (ul) => {
     ul.appendChild(li);
 }
 
+const HamburgerMenu = (hamburger) => {
+    const navItems = document.querySelectorAll(".nav-items a");
+
+    hamburger.addEventListener('click', () => {
+        for (let i = 0; i<4;i++){
+            navItems[i].classList.toggle("active");
+        }
+        
+    }
+
+    );
+}
+
 const initialiseMenu = () =>{
+
     const nav = document.querySelector(".navbar");
 
     const ul = document.createElement("ul");
@@ -48,6 +62,7 @@ const initialiseMenu = () =>{
     buttonImg.alt = "Hamburger Menu";
 
     button.appendChild(buttonImg);
+
 
     const hamli = document.createElement("li");
 
@@ -68,7 +83,12 @@ const initialiseMenu = () =>{
     }
 
     nav.appendChild(ul);
+
+    HamburgerMenu(button);
+
 };
+
+
 
 const initialiseFooter = () =>{
     const footer = document.querySelector(".main-footer");
@@ -166,22 +186,3 @@ scrollToTopButton.onclick = function(scroll){
 
 
 document.addEventListener("DOMContentLoaded", () => initialiseMenu(), initialiseFooter(), scrollFunction());
-
-const HamburgerMenu = () => {
-    const hamburgerButton = document.querySelector(".hamburger-button");
-    const navItems = document.querySelectorAll(".nav-items a");
-
-
-
-    hamburgerButton.addEventListener('click', () => {
-        for (let i = 0; i<4;i++){
-            navItems[i].classList.toggle("active");
-        }
-        
-    }
-
-    );
-}
-
-document.addEventListener('DOMContentLoaded', () => {HamburgerMenu()});
-
