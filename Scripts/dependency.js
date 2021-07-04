@@ -5,7 +5,7 @@ const markerContent = [
     icon: {
             url: "../Images/Pin4.png" // url
         },
-    path: "../PortfolioPage/PortfolioPiece4.html"
+    path: "/WSOA3028A_1894979/PortfolioPage/PortfolioPiece4.html"
     },
     {pos: {lat: -25.985128598784517 , lng: 27.782871546020054 },
     infoTitle: "Nirox in Lockdown", 
@@ -13,7 +13,7 @@ const markerContent = [
     icon: {
             url: "../Images/Pin3.png" // url
         },
-    path: "../PortfolioPage/PortfolioPiece3.html"
+    path: "/WSOA3028A_1894979/PortfolioPage/PortfolioPiece3.html"
     },
     {pos: {lat: 34.014883673925944 , lng: -118.50461696235737 },
     infoTitle: "Cali in the Winter",
@@ -21,7 +21,7 @@ const markerContent = [
     icon: {
             url: "../Images/Pin2.png" // url
         },
-    path: "../PortfolioPage/PortfolioPiece2.html"
+    path: "/WSOA3028A_1894979/PortfolioPage/PortfolioPiece2.html"
     },
     {pos: {lat: 35.68461701293415 , lng: 139.7628312211976 },
     infoTitle: "Japan after Bloom",
@@ -29,7 +29,7 @@ const markerContent = [
     icon: {
             url: "../Images/Pin1.png" // url
         },
-    path: "../PortfolioPage/PortfolioPiece1.html"
+    path: "/WSOA3028A_1894979/PortfolioPage/PortfolioPiece1.html"
     }
 ];
 
