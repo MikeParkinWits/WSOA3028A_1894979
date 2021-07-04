@@ -1,4 +1,14 @@
 const blogItems = [
+    {title: "The Final Location", blogLocation: "/Blogs/CreativeBlogs/Blog28.html",
+    blogImagePreview: {
+        src:"/Images/CreativeImages/Blog28/Blog28-Preview-Image.jpg",
+        alt: "A picture of graffiti on a wall in Maboneng Precint",
+        imageTitle: "A picture of graffiti in Maboneng Precint"},
+    blogType: "Creative",
+    blogDescription: "In this blog post I tell you about the final film location for my upcoming movie",
+    blogAuthor: "Jake Sky",
+    blogDate: "26 June 2021"
+    },
     {title: "My External Dependency", blogLocation: "/Blogs/WebDevBlogs/Blog27.html",
     blogImagePreview: {
         src:"/Images/WebDevelopmentImages/Blog27-Preview-Image.jpg",
