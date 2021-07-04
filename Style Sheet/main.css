@@ -155,13 +155,15 @@ nav a {
 
 /* 3.2 BLOG NAVIGATION BAR */
 
-.blogs-nav {
+.blogs-nav,
+.portfolio-nav {
   margin: 1.5rem 0rem 2rem 0rem;
   display: flex;
   justify-content: center;
 }
 
-.blogs-nav li:last-child {
+.blogs-nav,
+.portfolio-nav li:last-child {
   border-right: #d3d3d3 solid 0.05rem;
 }
 
