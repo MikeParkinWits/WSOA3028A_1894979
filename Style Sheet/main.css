@@ -281,7 +281,8 @@ nav a {
 /* 9.1 STANDARD PAGE LAYOUT */
 
 .standard-page,
-.standard-page-footer {
+.standard-page-footer,
+#map {
   display: inline-flex;
   flex-direction: column;
   width: 60vw;
@@ -387,6 +388,35 @@ nav a {
   margin-top: -1rem;
 }
 
+/* TEST */
+
+#map {
+  height: 30rem;
+  border: 0.08rem solid black;
+  margin-top: 0rem;
+}
+
+.map-title {
+  font-size: 1rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.map-description {
+  max-width: 10rem;
+  text-align: left;
+  margin-top: 0.3rem;
+  margin-bottom: 0rem;
+}
+
+.map-sub-title {
+  font-size: 0.7rem;
+  padding: 0rem;
+  margin: 0rem;
+  margin-top: 0.2rem;
+  text-align: left;
+}
+
 /* ------------------------
     10. RESPONSIVE DESIGN 
    ------------------------ */
@@ -396,7 +426,8 @@ nav a {
 @media only screen and (max-width: 1024px) {
   .standard-page,
   .standard-page-references,
-  .standard-page-footer {
+  .standard-page-footer,
+  #map {
     width: 70vw;
   }
 
@@ -445,7 +476,8 @@ nav a {
 
   .standard-page-references,
   .standard-page-footer,
-  .standard-page {
+  .standard-page,
+  #map {
     width: 80vw;
   }
 
@@ -513,35 +545,4 @@ nav a {
   .about-me-page {
     width: 80vw;
   }
-}
-
-/* TEST */
-
-#map {
-  height: 30rem;
-  margin: 0rem 10rem;
-  margin-bottom: 3rem;
-  border: 0.08rem solid black;
-  text-align: center;
-}
-
-.map-title {
-  font-size: 1rem;
-  padding: 0rem;
-  margin: 0rem;
-}
-
-.map-description {
-  max-width: 10rem;
-  text-align: left;
-  margin-top: 0.3rem;
-  margin-bottom: 0rem;
-}
-
-.map-sub-title {
-  font-size: 0.7rem;
-  padding: 0rem;
-  margin: 0rem;
-  margin-top: 0.2rem;
-  text-align: left;
 }
