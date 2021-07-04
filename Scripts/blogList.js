@@ -22,7 +22,7 @@ const blogItems = [
     {title: "The Problem with Social Media Algorithms", blogLocation: "/Blogs/TheoryBlogs/Blog24.html",
         blogImagePreview: {
             src: "/Images/TheoryBlogs/Blog24/Blog24-Preview-Image.jpg",
-            alt: "A photo of grew hacker code",
+            alt: "A photo of green hacker code",
             imageTitle: "Green Hacker Code"},
         blogType: "Theory",
         blogDescription: "Social Media algorithms are extremely powerful, but this power comes with some draw backs",

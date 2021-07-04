@@ -514,3 +514,34 @@ nav a {
     width: 80vw;
   }
 }
+
+/* TEST */
+
+#map {
+  height: 30rem;
+  margin: 0rem 10rem;
+  margin-bottom: 3rem;
+  border: 0.08rem solid black;
+  text-align: center;
+}
+
+.map-title {
+  font-size: 1rem;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.map-description {
+  max-width: 10rem;
+  text-align: left;
+  margin-top: 0.3rem;
+  margin-bottom: 0rem;
+}
+
+.map-sub-title {
+  font-size: 0.7rem;
+  padding: 0rem;
+  margin: 0rem;
+  margin-top: 0.2rem;
+  text-align: left;
+}
