@@ -1,4 +1,11 @@
 const portfolioItems = [
+    {title: "The Colourful Maboneng", portfolioLocation: "/PortfolioPage/PortfolioPiece5.html",
+    potfolioImagePreview: {
+        src: "/Images/PortfolioWork/Portfolio5/City7.jpeg",
+        alt: "A photo of a pink car on a building in Maboneng",
+        imageTitle: "A pink car on a building"},
+    portfolioDescription: "Some photos taken on my phone in the Maboneng Precinct in Johannesburg",
+},
     {title: "Life in the City", portfolioLocation: "/PortfolioPage/PortfolioPiece4.html",
     potfolioImagePreview: {
         src: "/Images/PortfolioWork/Portfolio4/Urban1.jpeg",

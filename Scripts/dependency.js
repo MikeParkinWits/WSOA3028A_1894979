@@ -1,4 +1,12 @@
 const markerContent = [
+    {pos:{lat: -26.203932895062728 , lng: 28.058184561363177 },
+    infoTitle: "The Colourful Maboneng",
+    infoDescription: "Some photos taken on my phone in the Maboneng Precinct in Johannesburg",
+    icon: {
+            url: "../Images/Pin5.png" // url
+        },
+    path: "../PortfolioPage/PortfolioPiece5.html"
+    },
     {pos:{lat: -26.14151157657505 , lng: 28.036544983475007 },
     infoTitle: "Life in the City",
     infoDescription: "Some photos taken in the city of Johannesburg while scouting for locations for my upcoming movie",
