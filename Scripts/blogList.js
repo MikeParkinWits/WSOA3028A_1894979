@@ -1,4 +1,14 @@
 const blogItems = [
+    {title: "Quarter to Midnight - Announcement", blogLocation: "/Blogs/CreativeBlogs/Blog29.html",
+    blogImagePreview: {
+        src:"/Images/CreativeImages/Blog29/Blog29-Preview-Image.jpg",
+        alt: "A Black and Red Standard Movie Clipper Board",
+        imageTitle: "A Movie Clipper Board"},
+    blogType: "Creative",
+    blogDescription: "I am happy to announce the name, and premier date, of my new movie - Quarter to Midnight! Read this blog post to find out more!",
+    blogAuthor: "Jake Sky",
+    blogDate: "28 June 2021"
+    },
     {title: "The Final Location", blogLocation: "/Blogs/CreativeBlogs/Blog28.html",
     blogImagePreview: {
         src:"/Images/CreativeImages/Blog28/Blog28-Preview-Image.jpg",
