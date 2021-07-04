@@ -162,7 +162,7 @@ nav a {
   justify-content: center;
 }
 
-.blogs-nav,
+.blogs-nav li:last-child,
 .portfolio-nav li:last-child {
   border-right: #d3d3d3 solid 0.05rem;
 }

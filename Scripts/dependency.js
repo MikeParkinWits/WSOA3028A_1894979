@@ -66,8 +66,8 @@ for (i = 0; i < markerContent.length;i++){
         position: markerInfo.pos,
         map:map,
         icon: {url:markerInfo.icon.url, scaledSize: new google.maps.Size(75, 75)},
-        url: markerInfo.path,    
-    });
+        url: markerInfo.path
+        });
 
     /*
     let bound = new google.maps.LatLngBounds();
@@ -106,6 +106,8 @@ for (i = 0; i < markerContent.length;i++){
     marker.addListener('click', function() {
         window.location.href = marker.url;
     });
+
+
     
   }
 

@@ -1,4 +1,14 @@
 const blogItems = [
+    {title: "My External Dependency", blogLocation: "/Blogs/WebDevBlogs/Blog27.html",
+    blogImagePreview: {
+        src:"/Images/WebDevelopmentImages/Blog27-Preview-Image.jpg",
+        alt: "A sepia photo of a paper map with pins in it",
+        imageTitle: "A paper map with pins in it"},
+    blogType: "Website Development",
+    blogDescription: "In this web design blog post I look at the external dependency that I added to my website",
+    blogAuthor: "Michael Parkin",
+    blogDate: "25 June 2021"
+    },
     {title: "Should you be worried about your Privacy in the Digital Age?", blogLocation: "/Blogs/TheoryBlogs/Blog26.html",
         blogImagePreview: {
             src:"/Images/TheoryBlogs/Blog26/Blog26-Preview-Image.jpg",
