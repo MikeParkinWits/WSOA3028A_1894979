@@ -73,8 +73,8 @@ for (i = 0; i < markerInfo.length;i++){
 
 
     const windowInfo = new google.maps.InfoWindow({
-        content: '<a href="https://www.w3schools.com" ><h2 class="map-title">' + markerInfo.title + '</h2>'
-                + '<h3 class="map-sub-title">Click Pin To View</h3>'
+        content: '<a href="' + markerInfo.portfolioLocation + '" ><h2 class="map-title">' + markerInfo.title + '</h2>'
+                + '<h3 class="map-sub-title">Click Here To View</h3>'
                 + '<p class="map-description">' + markerInfo.portfolioDescription + '</p> </a>'
     });
     
