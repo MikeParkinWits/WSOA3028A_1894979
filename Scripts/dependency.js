@@ -5,7 +5,6 @@ fetch("../Data/portfolioItems.json")
     return response.json();
 })
 .then(function(data) {
-    //console.log(data);
     markerInfo = data;
 
     CreateMap();
@@ -19,12 +18,9 @@ let markerTest = [];
 
 
 const CreateMap = () => {
-    // Create the script tag, set the appropriate attributes
     const script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjjXnKQ1Dn1GCx_wy6-tjSIWBluyY-Kkk&callback=initMap';
     script.async = true;
-    
-    // Append the 'script' element to 'head'
     document.head.appendChild(script);
     
     let map;

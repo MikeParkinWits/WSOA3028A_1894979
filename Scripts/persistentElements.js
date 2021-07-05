@@ -184,7 +184,6 @@ if (document.querySelector(".blog-nav-buttons")){
         return response.json();
     })
     .then(function(data) {
-        //console.log(data);
         blogs = data;
 
         blogs.reverse();
@@ -201,8 +200,6 @@ const BlogNavButtons = () => {
     let path = window.location.pathname;
     let blogNum = path.substring(path.lastIndexOf('/') + 5);
     blogNum = parseInt(blogNum.substring(0, blogNum.lastIndexOf('.')));
-
-    console.log(blogs[0]);
 
     const blogNavButtons = document.querySelector(".blog-nav-buttons");
     
