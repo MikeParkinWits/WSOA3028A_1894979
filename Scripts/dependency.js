@@ -73,7 +73,7 @@ for (i = 0; i < markerInfo.length;i++){
 
 
     const windowInfo = new google.maps.InfoWindow({
-        content: '<a href="' + markerInfo.portfolioLocation + '" ><h2 class="map-title">' + markerInfo.title + '</h2>'
+        content: '<a href="' + '/WSOA3028A_1894979/' + markerInfo.portfolioLocation + '" ><h2 class="map-title">' + markerInfo.title + '</h2>'
                 + '<h3 class="map-sub-title">Click Here To View</h3>'
                 + '<p class="map-description">' + markerInfo.portfolioDescription + '</p> </a>'
     });
