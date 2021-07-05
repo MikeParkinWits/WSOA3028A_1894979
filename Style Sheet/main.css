@@ -417,6 +417,7 @@ nav a {
   margin: 0rem;
   margin-top: 0.2rem;
   text-align: left;
+  align-content: left;
 }
 
 /* ------------------------

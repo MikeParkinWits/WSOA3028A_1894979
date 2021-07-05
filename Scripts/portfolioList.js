@@ -1,46 +1,29 @@
-const portfolioItems = [
-    {title: "The Colourful Maboneng", portfolioLocation: "/PortfolioPage/PortfolioPiece5.html",
-    potfolioImagePreview: {
-        src: "/Images/PortfolioWork/Portfolio5/City7.JPG",
-        alt: "A photo of a pink car on a building in Maboneng",
-        imageTitle: "A pink car on a building"},
-    portfolioDescription: "Some photos taken on my phone in the Maboneng Precinct in Johannesburg",
-},
-    {title: "Life in the City", portfolioLocation: "/PortfolioPage/PortfolioPiece4.html",
-    potfolioImagePreview: {
-        src: "/Images/PortfolioWork/Portfolio4/Urban1.jpeg",
-        alt: "Two statues at an intersection",
-        imageTitle: "Two statues at an intersection"},
-    portfolioDescription: "Some photos taken in the city of Johannesburg while scouting for locations for my upcoming movie",
-},
-    {title: "Nirox in Lockdown", portfolioLocation: "/PortfolioPage/PortfolioPiece3.html",
-    potfolioImagePreview: {
-        src: "/Images/PortfolioWork/Portfolio3/Nirox3.jpeg",
-        alt: "A sculpture of a person sitting on a lawn",
-        imageTitle: "A sculpture of a person sitting on a lawn"},
-    portfolioDescription: "Some photos taken during lockdown while scouting locations for my movie in Johannesburg",
-},
-    {title: "Cali in the Winter", portfolioLocation: "/PortfolioPage/PortfolioPiece2.html",
-    potfolioImagePreview: {
-        src: "/Images/PortfolioWork/Portfolio2/America2.jpeg",
-        alt: "America Flag on a mountain",
-        imageTitle: "A photo of an American Flag"},
-    portfolioDescription: "A collection of my favourite photos from Cali in the Winter",
-},
-{title: "Japan after Bloom", portfolioLocation: "/PortfolioPage/PortfolioPiece1.html",
-potfolioImagePreview: {
-    src: "/Images/PortfolioWork/Portfolio1/Japan1.jpg",
-    alt: "An Orange Pagoda in Japan",
-    imageTitle: "A photo of a Japanese Pagoda"},
-portfolioDescription: "A collection of my favourite photos from my time was working in Japan",
-}
-]
+let portfolioItems;
+
+fetch("../Scripts/portfolioItems.json")
+.then(function(response){
+    return response.json();
+})
+.then(function(data) {
+    //console.log(data);
+    portfolioItems = data;
+
+    initialisePortfolio();
+})
+.catch(e => {
+    console.log(e);
+});
+
 
 let portfolioItemsToLoad = null;
 const pathLocation = window.location.pathname;
 let semanticAdjust = null;
 
 const initialisePortfolio = () =>{
+    
+    console.log(portfolioItems);
+
+
     const blogGrid = document.querySelector('.portfolio-grid');
 
     if (window.location.pathname === "/WSOA3028A_1894979/" || window.location.pathname === "/WSOA3028A_1894979/index.html" || window.location.pathname === "/")
@@ -96,4 +79,4 @@ const initialisePortfolio = () =>{
 
 };
 
-document.addEventListener('DOMContentLoaded', () => initialisePortfolio());
+//document.addEventListener('DOMContentLoaded', () => initialisePortfolio());
