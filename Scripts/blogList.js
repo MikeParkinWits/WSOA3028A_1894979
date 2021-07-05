@@ -1,6 +1,6 @@
 let blogItems = []
 
-fetch("/Data/blogItems.json")
+fetch("/WSOA3028A_1894979/Data/blogItems.json")
 .then(function(response){
     return response.json();
 })
@@ -130,4 +130,4 @@ const initialiseBlogs = () =>{
 
 };
 
-document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
+//document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
