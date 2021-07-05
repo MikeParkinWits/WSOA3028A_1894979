@@ -67,27 +67,27 @@
               <time class="dt-published" datetime="2021-06-25"
                 >25 June 2021</time
               >
-              | Words: 1179 | Website Development
+              | Words: 1207 | Website Development
             </p>
           </header>
 
           <section class="e-content standard-page-content">
             <p>
               Websites can be challenging to create, and as such many rely
-              heavily on external libraries and frameworks when creating them.
-              While this may make the creation process easier, it is not always
+              heavily on external libraries and frameworks to create them. While
+              this may make the creation process easier, it is not always
               necessary – with it being more useful to create your website from
               scratch to allow for better coding practices, a more efficient
-              load time, and a website design that is tailored exactly towards
-              your vision. However, there are instances where you need to use
-              external dependencies to gain information from other sources. As
-              such, in this blog post I will go over the external dependency
-              that I added to my website, and why I believe that it is
-              necessary. To start, I first look at the considerations that I
-              made when choosing my dependency and all the different types of
-              external dependencies that I considered. Thereafter, I go over the
-              alternatives to the dependency I chose - elaborating on its
-              technical implementation and implications for my site.
+              site, and a design that is tailored exactly towards your vision.
+              However, there are instances where you need to use external
+              dependencies to gain information from other sources. As such, in
+              this blog post I will go over the external dependency that I added
+              to my website, and why I believe that it is necessary. To start, I
+              first look at the considerations that I made when choosing my
+              dependency and all the different types of external dependencies
+              that I considered. Thereafter, I go over the alternatives to the
+              dependency I chose – elaborating on its technical implementation,
+              and implications, for my site.
             </p>
 
             <p>
@@ -95,11 +95,10 @@
               characters website. Jake Sky is a photographer, and as such he
               mainly uses his website for sharing his photography, with the goal
               of promoting himself. As a result, I knew that the external
-              dependency had to revolve around Jake and his photography –
-              enhancing any visitor’s impression of Jake, and his photography.
-              With that, I started to research various different external
-              dependencies that revolved around this idea – which led me to two
-              major dependencies.
+              dependency I chose had to revolve around enhancing any visitor’s
+              impression of Jake and his photography. With that, I started to
+              research various different external dependencies that revolved
+              around this idea – which led me to two major dependencies.
             </p>
 
             <p>
@@ -108,44 +107,42 @@
               accounts, as this would give visitors a glimpse at his social
               media. To do this, I looked at utilizing the Facebook Graph API,
               Instagram Graph API, and Twitter JavaScript API. However, I chose
-              not to do this for the two reasons. Firstly, doing this felt
-              redundant and unnecessary as most posts that are posted on his
-              social medias can be viewed on the website. Secondly, the exam
-              self-assessment clearly states that only one external dependency
-              can be added to the project. While I could have implemented a
-              single social media API, this would leave the other two social
-              media options as links – although this presented a major
-              inconsistency in my websites design, which I would not be happy
-              with sacrificing. Another way I considered addressing this was by
-              removing the links to other social medias, and just keeping the
-              most important. However, this would take away from my character as
-              the way Jake mainly promotes himself is through all his social
-              medias.
+              not to do this for two reasons. Firstly, doing this felt redundant
+              and unnecessary as most posts that are on his social media can be
+              viewed on the website. Secondly, the exam self-assessment clearly
+              states that only one external dependency can be added to the
+              project. While I could have implemented a single social media API,
+              this would have left the other two social media options as links –
+              this would then have presented a major inconsistency in my
+              websites design, which I would not be happy sacrificing. Another
+              way I considered addressing this was by removing the links to
+              other social media accounts, only keeping the most important.
+              However, this would take away from my character as the way Jake
+              mainly promotes himself is through all his social medias.
             </p>
 
             <p>
-              Secondly, I landed on the idea of using an interactive map to
-              display where Jakes portfolio albums were photographed. As Jake is
-              meant to have taken photos all around the world, I thought that
-              this would be useful to visitor – both get an idea where Jake has
-              been in the world, and where he took his photos. Not only that,
-              but since the map would be interactive people could view areas
-              around where the photos are located – allowing them to explore and
-              be inspired to take their own photos. As such, I felt that this
-              would be the perfect addition to the website.
+              The second dependencies I landed on was the idea of using an
+              interactive map to display where Jakes portfolio albums were
+              photographed. As Jake is meant to have taken photos all around the
+              world, I thought that this would be useful to visitor – both to
+              get an idea of where Jake has been, and where he took his photos.
+              Not only that, but since the map would be interactive people could
+              view areas around where the photos were taken – allowing them to
+              explore and be inspired to take their own photos. As such, I felt
+              that this would be the perfect addition to the website.
             </p>
 
             <p>
-              With that, I then started researching various different map APIs
-              in order to find one that would be interactive, allow users to
-              easily explore areas, be familiar, and be customizable to fit my
-              websites style guide. With these ideas in mind, I came across
-              multiple different map APIs but narrowed my options down to two.
-              First, there is the newest API I considered – the Apple Maps
-              MapKit JS API, officially released in 2018. While I originally
-              believed that the relative newness of the API would make it an
-              ideal choice, and its feature set was extremely robust and
-              efficient, it came with one major drawback which I could not
+              With that, I then started researching various map APIs in order to
+              find one that would be interactive, allow users to easily explore
+              areas, be familiar, and be customizable to fit my websites style
+              guide. While I came across multiple different map APIs, I was able
+              to narrow my options down to two. First, there is the newest API I
+              considered – the Apple Maps MapKit JS API, officially released in
+              2018. While I originally believed that the relative newness of the
+              API would make it an ideal choice, with an extremely robust
+              feature set, it came with one major drawback which I could not
               overcome – it required a paid developer account. As such, I was
               not able to use it. Next, I looked at Google Maps Javascript API.
               As Google Maps is the most popular maps application in the world,
@@ -156,10 +153,11 @@
               application in the world, most people are familiar with how it
               works. On top of this, it also offers an immersive street view
               option, which would add to the maps interactivity and allow users
-              to more easily view the places Jake takes photos. However, this
-              all came with a catch – to use the Maps JavaScript API you had to
-              pay. Luckily though, it provides a 90-day free trial which I
-              decided to take advantage of.
+              to more easily view the places where Jake took his photos.
+              However, this all came with a slight catch – to use the Maps
+              JavaScript API you had to pay. Luckily though, it provides a
+              90-day free trial which I decided to take advantage of for this
+              project.
             </p>
 
             <p>
@@ -167,44 +165,47 @@
               implementing the map itself was not too challenging, because of
               the extensive documentation, I soon ran into an issue when adding
               the markers on the map. Originally, I had planned on populating
-              the map using KML layers. However, because the exam stipulated
-              that only one external dependency could be used, I was unable to –
+              the map using a KML file however, because the exam stipulated that
+              only one external dependency could be used, I was unable to –
               since KML has to be accessed through an external website, which
               would be an additional external dependency. As such, I decided to
-              load the markers through JavaScript, which each marker’s location
+              load the markers through JavaScript, with each marker’s location
               stored in an array. This ultimately allowed for a great amount of
               customizability, where I could add custom icons, and information
               windows. These information windows would then be used to give
               visitors a small preview of the portfolio piece when they hover
               over the portfolio marker, informing them that they can click to
               visit the view the entire portfolio. However, this posed a problem
-              for my responsive design as mobile viewers are unable to hover on
+              for my responsive design, as mobile viewers are unable to hover on
               items. As such, I decided to make the information window show up
-              on a click of the marker, with the information window providing a
-              way to view the entire portfolio.
+              on the click of the marker, with the information window providing
+              a way to view the entire portfolio.
             </p>
 
             <p>
-              Next, I realized that the standard map style was extremely
-              different from my entire websites style guide. As such, I used
-              Google Maps extensive customization features to alter the
-              appearance of the map to better suit the greyscale style guide,
-              while still being as accessible and recognizable as possible.
+              Next, it quickly became apparent that the standard Google Maps
+              style was extremely different from my entire websites style guide,
+              and as such it could be jarring to viewers. As such, I used Google
+              Maps extensive customization features to alter the appearance of
+              the map to better suit the greyscale style guide – all while
+              keeping both contrast in mind for accessible, and the style as
+              recognizable as possible.
             </p>
 
             <p>
-              Lastly, I realized that grouped map markers are not visible when
-              zoomed out. While I see this as a major issue, I was unable to fix
-              this as the native solution requires the use of Googles external
-              V3 Utility Library – and as we were only allowed to use one
-              external dependency, I was unable to implement this. Although I
-              did try to code this myself, using nested for loops to compare the
+              Lastly, I realized that map markers within a close proximity to
+              one another are not visible when zoomed out, as they overlap.
+              While I see this as a major issue, I was unable to fix this, as
+              the native solution requires the use of Googles external V3
+              Utility Library – and as we were only allowed to use one external
+              dependency, implementing this was not possible. Although I did try
+              to code this myself, using nested for loops to compare the
               distance between points and the maps current zoom level, this
-              proved to be too complex for me and I was unable to find an
-              adequate, and effective, solution in time. However, with the
+              proved to be too complex for me and as such I was unable to find
+              an adequate, and effective, solution in time. However, with the
               addition of one extra external dependency this would be an easy
-              fix – as it only requires the use of the Marker Clusterer Plus
-              function from the utility package.
+              fix – as it only requires the use of the Marker Clusterer function
+              from the V3 Utility Library.
             </p>
           </section>
         </section>
