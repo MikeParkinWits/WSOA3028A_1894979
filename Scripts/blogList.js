@@ -37,7 +37,7 @@ const initialiseBlogs = () =>{
         blogsToLoad = blogItems.length;
         switch (window.location.pathname)
         {
-            case "/Blogs/AllBlogsP1.html":
+            case "/WSOA3028A_1894979/Blogs/AllBlogsP1.html":
                 allBlogs = true;
                 break;
             case "/WSOA3028A_1894979/Blogs/TheoryBlogsP1.html":
