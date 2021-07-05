@@ -179,7 +179,7 @@ let blogs;
 
 if (document.querySelector(".blog-nav-buttons")){
 
-    fetch("/Scripts/blogItems.json")
+    fetch("/WSOA3028A_1894979/Scripts/blogItems.json")
     .then(function(response){
         return response.json();
     })
