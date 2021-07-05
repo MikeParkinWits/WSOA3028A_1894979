@@ -28,11 +28,14 @@ const initialisePortfolio = () =>{
 
     if (window.location.pathname === "/WSOA3028A_1894979/" || window.location.pathname === "/WSOA3028A_1894979/index.html" || window.location.pathname === "/")
     {
+        console.log("test");
         portfolioItemsToLoad = 1;
         semanticAdjust = "h3";
     }
     else
     {
+        console.log(window.location.pathname);
+
 
         semanticAdjust = "h2";
 
