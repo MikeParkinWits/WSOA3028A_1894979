@@ -1,4 +1,14 @@
 const blogItems = [
+    {title: "The History and Purpose of Responsive Web Design", blogLocation: "/Blogs/TheoryBlogs/Blog30.html",
+    blogImagePreview: {
+        src:"/Images/TheoryBlogs/Blog30/Blog30-Preview-Image.jpg",
+        alt: "A person holding a tablet with a laptop in the blurred background",
+        imageTitle: "A person holding a tablet with a laptop in the background"},
+    blogType: "Theory",
+    blogDescription: "Should you be using responsive web design on your website? In this blog post I try to answer this question by looking at what it is, and how it came to be",
+    blogAuthor: "Michael Parkin",
+    blogDate: "2 July 2021"
+    },
     {title: "Quarter to Midnight - Announcement", blogLocation: "/Blogs/CreativeBlogs/Blog29.html",
     blogImagePreview: {
         src:"/Images/CreativeImages/Blog29/Blog29-Preview-Image.jpg",

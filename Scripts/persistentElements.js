@@ -33,7 +33,7 @@ const HamburgerMenu = (hamburger) => {
     const navItems = document.querySelectorAll(".nav-items a");
 
     hamburger.addEventListener('click', () => {
-        for (let i = 0; i<4;i++){
+        for (let i = 0; i< navItems.length; i++){
             navItems[i].classList.toggle("active");
         }
         
