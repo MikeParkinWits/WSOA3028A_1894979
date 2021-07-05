@@ -67,7 +67,7 @@
               <time class="dt-published" datetime="2021-06-25"
                 >25 June 2021</time
               >
-              | Words: 1207 | Website Development
+              | Words: 1292 | Website Development
             </p>
           </header>
 
@@ -98,34 +98,34 @@
               dependency I chose had to revolve around enhancing any visitor’s
               impression of Jake and his photography. With that, I started to
               research various different external dependencies that revolved
-              around this idea – which led me to two major dependencies.
+              around this idea – which led me to two main external dependencies.
             </p>
 
             <p>
               Firstly, I considered integrating APIs to display Jakes social
-              media accounts on his contact page, instead of just a link his
+              media accounts on his contact page, instead of just a link to his
               accounts, as this would give visitors a glimpse at his social
               media. To do this, I looked at utilizing the Facebook Graph API,
               Instagram Graph API, and Twitter JavaScript API. However, I chose
-              not to do this for two reasons. Firstly, doing this felt redundant
-              and unnecessary as most posts that are on his social media can be
+              to not do this for two reasons. Firstly, doing this felt redundant
+              and unnecessary, as most posts that are on his social media can be
               viewed on the website. Secondly, the exam self-assessment clearly
               states that only one external dependency can be added to the
               project. While I could have implemented a single social media API,
-              this would have left the other two social media options as links –
-              this would then have presented a major inconsistency in my
-              websites design, which I would not be happy sacrificing. Another
-              way I considered addressing this was by removing the links to
-              other social media accounts, only keeping the most important.
+              leaving the other two social media options as links, I decided
+              against this as it would have presented a major inconsistency in
+              my websites design, which I would not be happy sacrificing.
+              Another way I considered addressing this was by removing the links
+              to other social media accounts, only keeping the most important.
               However, this would take away from my character as the way Jake
-              mainly promotes himself is through all his social medias.
+              mainly promotes himself is through all his social media.
             </p>
 
             <p>
-              The second dependencies I landed on was the idea of using an
+              The second type of dependency I landed on was the idea of using an
               interactive map to display where Jakes portfolio albums were
               photographed. As Jake is meant to have taken photos all around the
-              world, I thought that this would be useful to visitor – both to
+              world, I thought that this would be useful to visitors – both to
               get an idea of where Jake has been, and where he took his photos.
               Not only that, but since the map would be interactive people could
               view areas around where the photos were taken – allowing them to
@@ -136,41 +136,50 @@
             <p>
               With that, I then started researching various map APIs in order to
               find one that would be interactive, allow users to easily explore
-              areas, be familiar, and be customizable to fit my websites style
+              areas, feel familiar, and be customizable to fit my websites style
               guide. While I came across multiple different map APIs, I was able
               to narrow my options down to two. First, there is the newest API I
               considered – the Apple Maps MapKit JS API, officially released in
               2018. While I originally believed that the relative newness of the
-              API would make it an ideal choice, with an extremely robust
-              feature set, it came with one major drawback which I could not
-              overcome – it required a paid developer account. As such, I was
-              not able to use it. Next, I looked at Google Maps Javascript API.
-              As Google Maps is the most popular maps application in the world,
-              I was hopeful that it would be a good choice for my website – and
-              I was right. It offers an extremely robust feature set and allows
-              for expansive customization, which is exactly what I needed for my
-              site. Not only that, but because it is the most popular maps
-              application in the world, most people are familiar with how it
-              works. On top of this, it also offers an immersive street view
+              API would make it an ideal choice, allowing for an extremely
+              robust feature set, it came with one major drawback which I could
+              not overcome – it required a paid developer account. As such, I
+              was not able to use it. Next, I looked at Google Maps Javascript
+              API. As Google Maps is the most popular maps application in the
+              world, I was hopeful that it would be a good choice for my website
+              – and I was right. It offers an extremely robust feature set and
+              allows for expansive customization, which is exactly what I needed
+              for my site. Not only that, but because it is the most popular
+              maps application in the world, most people are familiar with how
+              it works. On top of this, it also offers an immersive street view
               option, which would add to the maps interactivity and allow users
               to more easily view the places where Jake took his photos.
               However, this all came with a slight catch – to use the Maps
-              JavaScript API you had to pay. Luckily though, it provides a
-              90-day free trial which I decided to take advantage of for this
-              project.
+              JavaScript API you had to pay. Luckily though, it provided a
+              90-day free trial which I utilized for this project.
             </p>
 
             <p>
-              Thereafter, I began implementing the Maps JavaScript API. While
-              implementing the map itself was not too challenging, because of
-              the extensive documentation, I soon ran into an issue when adding
-              the markers on the map. Originally, I had planned on populating
-              the map using a KML file however, because the exam stipulated that
-              only one external dependency could be used, I was unable to –
-              since KML has to be accessed through an external website, which
-              would be an additional external dependency. As such, I decided to
-              load the markers through JavaScript, with each marker’s location
-              stored in an array. This ultimately allowed for a great amount of
+              Thereafter, I began implementing the Maps JavaScript API. To
+              start, I had to setup an API key, on Google’s Cloud Platform
+              website, in order to access the map. While doing this, I also
+              restricted the API to only be usable on my website. This was
+              important, as all my websites code is freely available on GitHub,
+              which means anyone could steal my API and use it for themselves.
+            </p>
+
+            <p>
+              Furthermore, I then used this API key to create a map on my
+              website’s portfolio page. While implementing the map itself was
+              not too challenging, because of the extensive documentation, I did
+              soon run into an issue when adding the markers on the map.
+              Originally, I had planned on populating the map using a KML file
+              however, because the exam stipulated that only one external
+              dependency could be used, I was unable to do this as KML has to be
+              accessed through an external website, which would be an additional
+              external dependency. As such, I decided to load the markers
+              through JavaScript, with each marker’s location stored in an
+              array. This ultimately allowed for a great amount of
               customizability, where I could add custom icons, and information
               windows. These information windows would then be used to give
               visitors a small preview of the portfolio piece when they hover
@@ -179,28 +188,43 @@
               for my responsive design, as mobile viewers are unable to hover on
               items. As such, I decided to make the information window show up
               on the click of the marker, with the information window providing
-              a way to view the entire portfolio.
+              a way to view the entire portfolio (see figure 1 below).
             </p>
+
+            <figure>
+              <img
+                src="../../Images/WebDevelopmentImages/Blog27-figure1.png"
+                alt="An example of my websites map implementation"
+                width="350"
+                height="216"
+                title="An example of my maps markes and information window"
+              />
+
+              <figcaption>
+                Figure 1: Example of my maps custom markers and information
+                window
+              </figcaption>
+            </figure>
 
             <p>
               Next, it quickly became apparent that the standard Google Maps
-              style was extremely different from my entire websites style guide,
-              and as such it could be jarring to viewers. As such, I used Google
-              Maps extensive customization features to alter the appearance of
-              the map to better suit the greyscale style guide – all while
-              keeping both contrast in mind for accessible, and the style as
-              recognizable as possible.
+              default style was extremely different from my entire websites
+              style guide, and thus it could be jarring to viewers. As such, I
+              used Google Maps’ extensive customization features to alter the
+              appearance of the map to better suit the greyscale style guide –
+              all while keeping contrast in mind for accessible, and the style
+              as recognizable as possible.
             </p>
 
             <p>
               Lastly, I realized that map markers within a close proximity to
-              one another are not visible when zoomed out, as they overlap.
-              While I see this as a major issue, I was unable to fix this, as
-              the native solution requires the use of Googles external V3
-              Utility Library – and as we were only allowed to use one external
-              dependency, implementing this was not possible. Although I did try
-              to code this myself, using nested for loops to compare the
-              distance between points and the maps current zoom level, this
+              one another are not easily visible when zoomed out, as they
+              overlap. While I see this as a major issue, I was unable to fix
+              this, as the native solution requires the use of Googles external
+              V3 Utility Library – and as we were only allowed to use one
+              external dependency, implementing this was not possible. Although
+              I did try to code this myself, using nested for loops to compare
+              the distance between points and the maps current zoom level, this
               proved to be too complex for me and as such I was unable to find
               an adequate, and effective, solution in time. However, with the
               addition of one extra external dependency this would be an easy
