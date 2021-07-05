@@ -5,7 +5,6 @@ fetch("/WSOA3028A_1894979/Data/portfolioItems.json")
     return response.json();
 })
 .then(function(data) {
-    //console.log(data);
     portfolioItems = data;
 
     initialisePortfolio();
@@ -81,5 +80,3 @@ const initialisePortfolio = () =>{
     }
 
 };
-
-//document.addEventListener('DOMContentLoaded', () => initialisePortfolio());

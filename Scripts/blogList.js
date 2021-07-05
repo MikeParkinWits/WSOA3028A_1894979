@@ -5,7 +5,6 @@ fetch("/WSOA3028A_1894979/Data/blogItems.json")
     return response.json();
 })
 .then(function(data) {
-    //console.log(data);
     blogItems = data;
 
     initialiseBlogs();
@@ -129,5 +128,3 @@ const initialiseBlogs = () =>{
     }
 
 };
-
-//document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
