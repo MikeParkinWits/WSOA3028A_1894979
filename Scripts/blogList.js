@@ -1,6 +1,6 @@
 let blogItems = []
 
-fetch("/WSOA3028A_1894979/Data/blogItems.json")
+fetch("/Data/blogItems.json")
 .then(function(response){
     return response.json();
 })
