@@ -1,6 +1,4 @@
-let blogItems = [
-   
-]
+let blogItems = []
 
 fetch("/WSOA3028A_1894979/Scripts/blogItems.json")
 .then(function(response){
@@ -37,26 +35,23 @@ const initialiseBlogs = () =>{
         semanticAdjust = "h2";
 
         blogsToLoad = blogItems.length;
-
-        if (window.location.pathname === "/WSOA3028A_1894979/Blogs/AllBlogsP1.html")
+        switch (window.location.pathname)
         {
-            allBlogs = true;
-        }
-        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/TheoryBlogsP1.html")
-        {
-            blogType = "Theory";
-        }
-        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/CreativeBlogsP1.html")
-        {
-            blogType = "Creative";
-        }
-        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/CharacterDevBlogsP1.html")
-        {
-            blogType = "Character Development";
-        }
-        else if (window.location.pathname === "/WSOA3028A_1894979/Blogs/WebDevBlogsP1.html")
-        {
-            blogType = "Website Development";
+            case "/WSOA3028A_1894979/Blogs/AllBlogsP1.html":
+                allBlogs = true;
+                break;
+            case "/WSOA3028A_1894979/Blogs/TheoryBlogsP1.html":
+                blogType = "Theory";
+                break;
+            case "/WSOA3028A_1894979/Blogs/CreativeBlogsP1.html":
+                blogType = "Creative";
+                break;
+            case "/WSOA3028A_1894979/Blogs/CharacterDevBlogsP1.html":
+                blogType = "Character Development";
+                break;
+            case "/WSOA3028A_1894979/Blogs/WebDevBlogsP1.html":
+                blogType = "Website Development";
+                break;
         }
     }
 
@@ -82,21 +77,19 @@ const initialiseBlogs = () =>{
             const header = document.createElement("header");
             const headerP = document.createElement("p");
 
-            if (blogItems[i].blogType === "Theory")
-            {
-                headerP.className = "theory-blog";
-            }
-            else if (blogItems[i].blogType === "Creative")
-            {
-                headerP.className = "creative-blog";
-            }
-            else if (blogItems[i].blogType === "Character Development")
-            {
-                headerP.className = "character-blog";
-            }
-            else if (blogItems[i].blogType === "Website Development")
-            {
-                headerP.className = "website-blog";
+            switch (blogItems[i].blogType){
+                case "Theory":
+                    headerP.className = "theory-blog";
+                    break;
+                case "Creative":
+                    headerP.className = "creative-blog";
+                    break;
+                case "Character Development":
+                    headerP.className = "character-blog";
+                    break;
+                case "Website Development":
+                    headerP.className = "website-blog";
+                    break;
             }
 
             headerP.innerText = blogItems[i].blogType;
