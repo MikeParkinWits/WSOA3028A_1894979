@@ -15,10 +15,10 @@ fetch("../Scripts/portfolioItems.json")
 });
 
 
+let markerTest = [];
 
 
 const CreateMap = () => {
-    let markerTest = [];
     // Create the script tag, set the appropriate attributes
     const script = document.createElement('script');
     script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjjXnKQ1Dn1GCx_wy6-tjSIWBluyY-Kkk&callback=initMap&libraries=geometry';
