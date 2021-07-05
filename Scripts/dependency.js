@@ -7,23 +7,28 @@ fetch("../Scripts/portfolioItems.json")
 .then(function(data) {
     //console.log(data);
     markerInfo = data;
+
+    CreateMap();
 })
 .catch(e => {
     console.log(e);
 });
 
 
-let markerTest = [];
-// Create the script tag, set the appropriate attributes
-const script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjjXnKQ1Dn1GCx_wy6-tjSIWBluyY-Kkk&callback=initMap&libraries=geometry';
-script.async = true;
 
-// Append the 'script' element to 'head'
-document.head.appendChild(script);
 
-let map;
-
+const CreateMap = () => {
+    let markerTest = [];
+    // Create the script tag, set the appropriate attributes
+    const script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBjjXnKQ1Dn1GCx_wy6-tjSIWBluyY-Kkk&callback=initMap&libraries=geometry';
+    script.async = true;
+    
+    // Append the 'script' element to 'head'
+    document.head.appendChild(script);
+    
+    let map;
+}
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
