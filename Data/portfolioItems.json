@@ -6,7 +6,7 @@
     "portfolioDescription": "Some photos taken on my phone in the Maboneng Precinct in Johannesburg",
     "map": {
         "pos":{"lat": -26.203932895062728 , "lng": 28.058184561363177 },
-        "icon": "../Images/Pin5.png"
+        "icon": "../Images/PortfolioWork/Pins/Pin5.png"
         }
 
 },
@@ -18,7 +18,7 @@
     "portfolioDescription": "Some photos taken in the city of Johannesburg while scouting for locations for my upcoming movie",
     "map": {
         "pos":{"lat": -26.14151157657505 , "lng": 28.036544983475007 },
-        "icon": "../Images/Pin4.png"
+        "icon": "../Images/PortfolioWork/Pins/Pin4.png"
         }
 },
     {"title": "Nirox in Lockdown", "portfolioLocation": "/PortfolioPage/PortfolioPiece3.html",
@@ -29,7 +29,7 @@
     "portfolioDescription": "Some photos taken during lockdown while scouting locations for my movie in Johannesburg",
     "map": {
         "pos": {"lat": -25.985128598784517 , "lng": 27.782871546020054 },
-        "icon": "../Images/Pin3.png"
+        "icon": "../Images/PortfolioWork/Pins/Pin3.png"
     }
 },
     {"title": "Cali in the Winter", "portfolioLocation": "/PortfolioPage/PortfolioPiece2.html",
@@ -40,7 +40,7 @@
     "portfolioDescription": "A collection of my favourite photos from Cali in the Winter",
     "map": {
         "pos": {"lat": 34.014883673925944 , "lng": -118.50461696235737 },
-        "icon": "../Images/Pin2.png"
+        "icon": "../Images/PortfolioWork/Pins/Pin2.png"
     }
 },
     {"title": "Japan after Bloom", "portfolioLocation": "/PortfolioPage/PortfolioPiece1.html",
@@ -51,6 +51,6 @@
     "portfolioDescription": "A collection of my favourite photos from my time was working in Japan",
     "map": {
         "pos": {"lat": 35.68461701293415 , "lng": 139.7628312211976 },
-        "icon": "../Images/Pin1.png"
+        "icon": "../Images/PortfolioWork/Pins/Pin1.png"
         }
 }]

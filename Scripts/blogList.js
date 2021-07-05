@@ -1,6 +1,6 @@
 let blogItems = []
 
-fetch("/WSOA3028A_1894979/Scripts/blogItems.json")
+fetch("/WSOA3028A_1894979/Data/blogItems.json")
 .then(function(response){
     return response.json();
 })
@@ -37,7 +37,7 @@ const initialiseBlogs = () =>{
         blogsToLoad = blogItems.length;
         switch (window.location.pathname)
         {
-            case "/WSOA3028A_1894979/Blogs/AllBlogsP1.html":
+            case "/Blogs/AllBlogsP1.html":
                 allBlogs = true;
                 break;
             case "/WSOA3028A_1894979/Blogs/TheoryBlogsP1.html":
@@ -54,6 +54,7 @@ const initialiseBlogs = () =>{
                 break;
         }
     }
+
 
 
     for (let i=0; i<blogsToLoad; i++){
@@ -92,6 +93,9 @@ const initialiseBlogs = () =>{
                     break;
             }
 
+
+
+
             headerP.innerText = blogItems[i].blogType;
             
             const blogTitle = document.createElement(semanticAdjust);
@@ -126,4 +130,4 @@ const initialiseBlogs = () =>{
 
 };
 
-//document.addEventListener('DOMContentLoaded', () => initialiseBlogs());
+document.addEventListener('DOMContentLoaded', () => initialiseBlogs());

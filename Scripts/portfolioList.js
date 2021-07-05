@@ -1,6 +1,6 @@
 let portfolioItems;
 
-fetch("/WSOA3028A_1894979/Scripts/portfolioItems.json")
+fetch("/WSOA3028A_1894979/Data/portfolioItems.json")
 .then(function(response){
     return response.json();
 })

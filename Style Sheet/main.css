@@ -20,6 +20,7 @@
 
       7.1 STANDARD PAGE LAYOUT
       7.2 ABOUT ME PAGE
+      7.3 MAP
 
     8. RESEPONSIVE DESIGN
 
@@ -256,7 +257,7 @@ nav a {
 }
 
 /* -------------
-    7. BUTTONS 
+    6. BUTTONS 
    ------------- */
 
 .button {
@@ -277,10 +278,10 @@ nav a {
 }
 
 /* ----------------------------
-    9. PAGE SPECIFIC STYLING 
+    7. PAGE SPECIFIC STYLING 
    ---------------------------- */
 
-/* 9.1 STANDARD PAGE LAYOUT */
+/* 7.1 STANDARD PAGE LAYOUT */
 
 .standard-page,
 .standard-page-footer,
@@ -362,7 +363,7 @@ nav a {
   height: 110%;
 }
 
-/* 9.2 ABOUT ME */
+/* 7.2 ABOUT ME */
 
 .about-me-page {
   text-align: left;
@@ -390,7 +391,7 @@ nav a {
   margin-top: -1rem;
 }
 
-/* TEST */
+/* 7.3 MAP */
 
 #map {
   height: 30rem;
@@ -423,10 +424,10 @@ nav a {
 }
 
 /* ------------------------
-    10. RESPONSIVE DESIGN 
+    8. RESPONSIVE DESIGN 
    ------------------------ */
 
-/* 10.1 TABLET - Based on the iPad */
+/* 8.1 TABLET - Based on the iPad */
 
 @media only screen and (max-width: 1024px) {
   .standard-page,
@@ -468,7 +469,7 @@ nav a {
   }
 }
 
-/* 10.2 MOBILE - Based on iPhone X and other popular/similair devices */
+/* 8.2 MOBILE - Based on iPhone X and other popular/similair devices */
 
 @media only screen and (max-width: 768px) {
   h1 {
