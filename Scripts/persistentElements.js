@@ -209,20 +209,20 @@ const BlogNavButtons = () => {
     let blogExtension;
 
     const BlogExtension = (modifier) => {
-        if (blogs[blogNum - modifier].blogType == "Theory"){
-            blogExtension = "../TheoryBlogs/Blog"
-        }
-        else if (blogs[blogNum - modifier].blogType == "Creative")
-        {
-            blogExtension = "../CreativeBlogs/Blog";
-        }
-        else if (blogs[blogNum - modifier].blogType == "Character Development")
-        {
-            blogExtension = "../CharacterDevBlogs/Blog";
-        }
-        else if (blogs[blogNum - modifier].blogType == "Website Development")
-        {
-            blogExtension = "../WebDevBlogs/Blog";
+        switch (blogs[blogNum - modifier].blogType){
+            case "Theory":
+                blogExtension = "../TheoryBlogs/Blog";
+                break;
+            case "Creative":
+                blogExtension = "../CreativeBlogs/Blog";
+                break;
+            case "Character Development":
+                blogExtension = "../CharacterDevBlogs/Blog";
+                break;
+            case "Website Development":
+                blogExtension = "../WebDevBlogs/Blog";
+                break;
+
         }
     }
 
